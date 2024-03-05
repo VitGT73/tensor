@@ -1,7 +1,7 @@
 import random
 import allure
 import pytest
-from base.base_test import BaseTest
+from helpers.base_test import BaseTest
 
 @allure.feature("Profile Functionality")
 class TestProfileFeature(BaseTest):

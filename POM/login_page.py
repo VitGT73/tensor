@@ -1,11 +1,11 @@
 import allure
 from selenium.webdriver.support import expected_conditions as EC
-from base.base_page import BasePage
+from helpers.base_page import BasePage
 from config.links import Links
 
 class LoginPage(BasePage):
 
-    
+
     PAGE_URL = Links.LOGIN_PAGE
 
     USERNAME_FIELD = ("xpath", "//input[@name='username']")
