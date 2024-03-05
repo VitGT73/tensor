@@ -1,5 +1,5 @@
 import allure
-from allure_commons.types import AttachmentType
+# from allure_commons.types import AttachmentType
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -13,7 +13,7 @@ class BasePage:
 
 
     def open(self):
-        with allure.step(f"Open {self.PAGE_URL} page"):
+        # with allure.step(f"Open {self.PAGE_URL} page"):
             self.driver.get(self.PAGE_URL)
 
 
@@ -24,12 +24,12 @@ class BasePage:
             self.wait.until(EC.url_contains(self.PAGE_URL))
 
 
-    def make_screenshot(self, screenshot_name):
-        allure.attach(
-            body=self.driver.get_screenshot_as_png(),
-            name=screenshot_name,
-            attachment_type=AttachmentType.PNG,
-        )
+    # def make_screenshot(self, screenshot_name):
+    #     allure.attach(
+    #         body=self.driver.get_screenshot_as_png(),
+    #         name=screenshot_name,
+    #         attachment_type=AttachmentType.PNG,
+    #     )
 
 
 

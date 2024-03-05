@@ -6,6 +6,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from helpers.base_test import BaseTest
 
+
+@allure.title("Тестовое задание от компании Тензор")
+@allure.description("Сравнение размеров картинок в блоке 'Работаем'")
 class TestDefaultSuite(BaseTest):
 
     sbis_window = {}
