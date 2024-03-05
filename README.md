@@ -9,3 +9,7 @@
 
 
 https://allurereport.org/docs/pytest-reference/
+
+
+Важно: pytest==8.0.2, более высокая версия не дружит с Allure
+https://github.com/allure-framework/allure-python/issues/794
