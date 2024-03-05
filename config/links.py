@@ -1,8 +1,11 @@
-
-
 class Links:
 
-    HOST = "https://opensource-demo.orangehrmlive.com/web/index.php"
-    LOGIN_PAGE = f"{HOST}/auth/login"
-    DASHBOARD_PAGE = f"{HOST}/dashboard/index"
-    PERSONAL_PAGE = f"{HOST}/pim/viewPersonalDetails/empNumber/7"
+# SBIS pages
+    SBIS_HOST = "https://sbis.ru"
+    SBIS_HOME_PAGE: str = f"{SBIS_HOST}"
+    SBIS_CONTACTS_PAGE: str = f"{SBIS_HOST}/contacts"
+
+# Тензор pages
+    TENZOR_HOST = "https://tensor.ru"
+    TENZOR_HOME_PAGE: str = f"{SBIS_HOST}"
+    TENZOR_ABOUT_PAGE: str = f"{TENZOR_HOST}/about"
