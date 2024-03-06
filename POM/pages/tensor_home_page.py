@@ -25,6 +25,6 @@ class TensorHomePage(BasePage):
     @allure.step("Click on 'Подробнее' link")
     def click_to_details_link(self):
         # Найти элемент, к которому нужно прокрутить страницу
-        element = self.driver.find_element(*self.ABOUT)
+        element=self.wait.until(EC.element_to_be_clickable(self.ABOUT))
         self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-        self.wait.until(EC.element_to_be_clickable(self.ABOUT)).click()
+        element.click()
