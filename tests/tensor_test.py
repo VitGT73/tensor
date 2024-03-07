@@ -39,6 +39,7 @@ class TestDefaultSuite(BaseTest):
     @allure.description("Изменение региона на 'Камчатский край'")
     def test_second_scenario(self, driver):
         self.sbis_home_page.open()
+        self.sbis_home_page.is_opened()
         self.sbis_home_page.click_to_contacts_link()
         self.sbis_contacts_page.is_opened()
         self.sbis_contacts_page.this_region_is_checked(self.home_region)
