@@ -8,7 +8,6 @@ def get_filename_with_path(filename):
 
 def get_file_size(fullname):
     file_size_bytes = os.path.getsize(fullname)
-    print(file_size_bytes)
     return file_size_bytes
 
 def get_filename_from_url(url):

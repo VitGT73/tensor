@@ -12,5 +12,5 @@ class SbisHeader(BasePage):
         # self.contacts_link = (By.XPATH, "//div[@class='sbisru-Header']//a[text()='Контакты']")
 
     def contacts_click(self):
-        with allure.step(f"Переход в раздел 'Контакты'"):
+        with allure.step("Go to the 'Контакты' section"):
             self.wait.until(EC.element_to_be_clickable(self.CONTACTS_LINK)).click()

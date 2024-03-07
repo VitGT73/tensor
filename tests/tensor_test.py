@@ -20,6 +20,7 @@ class TestDefaultSuite(BaseTest):
     @allure.description("Сравнение размеров картинок в блоке 'Работаем'")
     def test_first_scenario(self, driver):
         self.sbis_home_page.open()
+        self.sbis_home_page.is_opened()
         self.sbis_home_page.click_to_contacts_link()
         self.sbis_contacts_page.is_opened()
         self.sbis_window = driver.current_window_handle

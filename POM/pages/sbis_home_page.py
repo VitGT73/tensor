@@ -1,4 +1,4 @@
-# import allure
+import allure
 from helpers.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
@@ -16,6 +16,7 @@ class SbisHomePage(BasePage):
         self.PAGE_URL = Links.SBIS_HOME_PAGE
 
 
-    # @allure.step("Click on 'Контакты' link")
+
     def click_to_contacts_link(self):
-        self.wait.until(EC.element_to_be_clickable(self.header.CONTACTS_LINK)).click()
+        with allure.step("Click on 'Контакты' link"):
+            self.wait.until(EC.element_to_be_clickable(self.header.CONTACTS_LINK)).click()

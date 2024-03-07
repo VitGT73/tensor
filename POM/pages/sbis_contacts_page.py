@@ -24,16 +24,14 @@ class SbisContactsPage(BasePage):
         )
         self.CHOICE_REGION = (By.XPATH, "//h5[text()='Выберите свой регион']")
         self.CHOICE_REGION_RENDERED = (By.XPATH, "//div[contains(@data-qa,'controls-Render')]")
-        # self.REGIONS_LIST = (By.XPATH, '//ul[@class="sbis_ru-Region-Panel__list-l"]')
-        # self.REGION_LINK = (By.XPATH, '//ul[@class="sbis_ru-Region-Panel__list-l"]//span[contains(text(), "{}")]')
         self.REGION_LINK_CSS_SELECTOR = 'span.sbis_ru-link[title*="{}"]'
-        # self.REGION_LINK_SELECTOR = '//ul[@class="sbis_ru-Region-Panel__list-l"]//span[contains(text(), "{}")]'
+
         self.PARTNER = (By.ID, "city-id-2")
 
 
-    @allure.step("Click on 'My Info' link")
     def click_to_tensor_banner(self):
-        self.wait.until(EC.element_to_be_clickable(self.TENSOR_BANNER)).click()
+        with allure.step("Click to Tensor banner"):
+            self.wait.until(EC.element_to_be_clickable(self.TENSOR_BANNER)).click()
 
     def is_opened(self):
         with allure.step(f"Page {self.PAGE_URL} is opened"):
@@ -47,22 +45,21 @@ class SbisContactsPage(BasePage):
             )
 
     def open_regions_list(self):
-        with allure.step(f"Open regions list"):
+        with allure.step("Open regions list"):
             self.wait.until(EC.element_to_be_clickable(self.CHECKED_REGION)).click()
 
     def is_region_list_loaded(self):
-        with allure.step(f"Regions list is loaded"):
+        with allure.step("Regions list is loaded"):
+            self.wait.until(EC.presence_of_all_elements_located(self.CHOICE_REGION_RENDERED))
             self.wait.until(EC.presence_of_element_located(self.CHOICE_REGION))
 
     def click_region_link(self, region):
         with allure.step(f"Activate region '{region}'"):
-            # time.sleep(1)
             self.wait.until(EC.presence_of_all_elements_located(self.CHOICE_REGION_RENDERED))
             region_link_locator = (
                 By.CSS_SELECTOR,
                 self.REGION_LINK_CSS_SELECTOR.format(region),
             )
-            # print(region_link_locator)
             self.wait.until(EC.element_to_be_clickable(region_link_locator)).click()
 
     def check_partner_city(self, city):

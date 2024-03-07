@@ -22,7 +22,7 @@ def remove_download_directory():
     # Удаление папки, если она существует
     if os.path.exists(directory_path):
         shutil.rmtree(directory_path)
-        print(f"Папка {directory_path} успешно удалена перед началом тестов.")
+        print(f"\nПапка {directory_path} успешно удалена перед началом тестов.")
 
 def pytest_addoption(parser):
     parser.addoption(

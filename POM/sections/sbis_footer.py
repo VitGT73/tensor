@@ -12,7 +12,7 @@ class SbisFooter(BasePage):
         # self.contacts_link = (By.XPATH, "//div[@class='sbisru-Header']//a[text()='Контакты']")
 
     def click_to_sbis_download_link(self):
-        with allure.step(f"Open Sbis Download page"):
+        with allure.step("Open Sbis Download page"):
             element = self.wait.until(EC.element_to_be_clickable(self.SBIS_DOWNLOAD_LINK))
             self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
             element.click()

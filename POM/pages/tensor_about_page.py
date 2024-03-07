@@ -17,29 +17,31 @@ class TensorAboutPage(BasePage):
         # self.WORKING_IMAGES = (By.XPATH, "//div[div[h2[text()='Работаем']]]//img")
 
 
-    @allure.step("Блок 'Работаем' существует")
+
     def is_working_block_present(self):
-        self.wait.until(EC.presence_of_element_located(self.WORKING_BLOCK))
+        with allure.step("Block 'Работаем' is present"):
+            self.wait.until(EC.presence_of_element_located(self.WORKING_BLOCK))
 
 
-    @allure.step("Checking that the images in the block 'Работаем' are the same size")
+
     def check_images_same_size(self):
-        # Найдем элемент с помощью XPath
-        element = self.driver.find_element(*self.WORKING_BLOCK)
+        with allure.step("Checking that the images in the block 'Работаем' are the same size"):
+            # Найдем элемент с помощью XPath
+            element = self.driver.find_element(*self.WORKING_BLOCK)
 
-        # Теперь найдем все изображения внутри этого элемента
-        images = element.find_elements(By.TAG_NAME, "img")
+            # Теперь найдем все изображения внутри этого элемента
+            images = element.find_elements(By.TAG_NAME, "img")
 
-        # Получим размер первого изображения
-        first_image = images[0]
-        first_width = first_image.size.get("width")
-        first_height = first_image.size.get("height")
+            # Получим размер первого изображения
+            first_image = images[0]
+            first_width = first_image.size.get("width")
+            first_height = first_image.size.get("height")
 
-        for image in images[1:]:
-            width = image.size.get("width")
-            height = image.size.get("height")
-            if width != first_width or height != first_height:
-                allure.attach("Сообщение", "Размеры изображений не совпадают: первый: {} x {}, текущий: {} x {}".format(first_width, first_height, width, height), allure.attachment_type.TEXT)
-                raise AssertionError("Размеры изображений не совпадают")
+            for image in images[1:]:
+                width = image.size.get("width")
+                height = image.size.get("height")
+                if width != first_width or height != first_height:
+                    allure.attach("Message", "Image sizes don't match! First: {} x {}, current: {} x {}".format(first_width, first_height, width, height), allure.attachment_type.TEXT)
+                    raise AssertionError("Image sizes don't match")
 
-        allure.attach("Сообщение", "Все изображения имеют одинаковый размер: {} x {}".format(first_width, first_height), allure.attachment_type.TEXT)
+            allure.attach("Message", "All images are the same size: {} x {}".format(first_width, first_height), allure.attachment_type.TEXT)
