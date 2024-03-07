@@ -60,3 +60,4 @@ allure generate --clean
    # downloads path
     DOWNLOAD_PATH:str = os.getcwd() + "/downloads"
 ```
+Для ускорения выполнения тестов можно отключить `headless` режим. Для это нужно раскоментировать следующую строчку `# options.add_argument("--headless")` в файле `conftest.py`
