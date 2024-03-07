@@ -50,7 +50,7 @@ class TestDefaultSuite(BaseTest):
         self.sbis_contacts_page.check_title('Камчатский край')
         self.sbis_contacts_page.check_url('41-kamchatskij-kraj')
 
-    @allure.description("Download Sbis-plugin for linux")
+    @allure.description("Загрузка Sbis-plugin для Windows")
     def test_third_scenario(self, driver):
         self.sbis_home_page.open()
         self.sbis_home_page.footer.click_to_sbis_download_link()

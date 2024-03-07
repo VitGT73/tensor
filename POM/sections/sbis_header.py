@@ -9,7 +9,6 @@ class SbisHeader(BasePage):
     def __init__(self, driver) -> None:
         super().__init__(driver)
         self.CONTACTS_LINK = (By.LINK_TEXT, "Контакты")
-        # self.contacts_link = (By.XPATH, "//div[@class='sbisru-Header']//a[text()='Контакты']")
 
     def contacts_click(self):
         with allure.step("Go to the 'Контакты' section"):

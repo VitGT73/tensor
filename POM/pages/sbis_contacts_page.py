@@ -23,11 +23,13 @@ class SbisContactsPage(BasePage):
             "//div[div[h2[text()='Контакты']]]//span[@class='sbis_ru-Region-Chooser__text sbis_ru-link']",
         )
         self.CHOICE_REGION = (By.XPATH, "//h5[text()='Выберите свой регион']")
-        self.CHOICE_REGION_RENDERED = (By.XPATH, "//div[contains(@data-qa,'controls-Render')]")
+        self.CHOICE_REGION_RENDERED = (
+            By.XPATH,
+            "//div[contains(@data-qa,'controls-Render')]",
+        )
         self.REGION_LINK_CSS_SELECTOR = 'span.sbis_ru-link[title*="{}"]'
 
         self.PARTNER = (By.ID, "city-id-2")
-
 
     def click_to_tensor_banner(self):
         with allure.step("Click to Tensor banner"):
@@ -50,12 +52,16 @@ class SbisContactsPage(BasePage):
 
     def is_region_list_loaded(self):
         with allure.step("Regions list is loaded"):
-            self.wait.until(EC.presence_of_all_elements_located(self.CHOICE_REGION_RENDERED))
+            self.wait.until(
+                EC.presence_of_all_elements_located(self.CHOICE_REGION_RENDERED)
+            )
             self.wait.until(EC.presence_of_element_located(self.CHOICE_REGION))
 
     def click_region_link(self, region):
         with allure.step(f"Activate region '{region}'"):
-            self.wait.until(EC.presence_of_all_elements_located(self.CHOICE_REGION_RENDERED))
+            self.wait.until(
+                EC.presence_of_all_elements_located(self.CHOICE_REGION_RENDERED)
+            )
             region_link_locator = (
                 By.CSS_SELECTOR,
                 self.REGION_LINK_CSS_SELECTOR.format(region),

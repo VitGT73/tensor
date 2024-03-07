@@ -37,7 +37,6 @@ def pytest_addoption(parser):
 def driver(request):
     browser = request.config.getoption("--browser")
 
-    # Option setup to run in headless mode (in order to run this in GH Actions)
     options = Options()
     # options.add_argument("--headless")
     options.add_argument("--no-sandbox")
@@ -65,5 +64,3 @@ def driver(request):
     # Tear down
     print(f"\nTear down: {browser} driver")
     driver.quit()
-
-

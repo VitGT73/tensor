@@ -17,7 +17,6 @@ class TensorAboutPage(BasePage):
         # self.WORKING_IMAGES = (By.XPATH, "//div[div[h2[text()='Работаем']]]//img")
 
 
-
     def is_working_block_present(self):
         with allure.step("Block 'Работаем' is present"):
             self.wait.until(EC.presence_of_element_located(self.WORKING_BLOCK))

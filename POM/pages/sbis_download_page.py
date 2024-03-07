@@ -25,15 +25,18 @@ class SbisDownloadPage(BasePage):
         )
         self.PLUGIN_URL_PART = "tab=plugin"
 
-    # @allure.step("Click on 'Контакты' link")
     def click_to_contacts_link(self):
         with allure.step("Click on 'Контакты' link"):
-            self.wait.until(EC.element_to_be_clickable(self.header.CONTACTS_LINK)).click()
+            self.wait.until(
+                EC.element_to_be_clickable(self.header.CONTACTS_LINK)
+            ).click()
 
     def click_to_plugin_link(self):
         with allure.step("Click on 'СБИС Плагин' link"):
             self.wait.until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "body > div.ws-has-focus"))
+                EC.presence_of_element_located(
+                    (By.CSS_SELECTOR, "body > div.ws-has-focus")
+                )
             )
             self.wait.until(EC.element_to_be_clickable(self.PLUGIN_LINK)).click()
 
@@ -70,6 +73,4 @@ class SbisDownloadPage(BasePage):
     def is_web_installer_have_right_size(self, download_path):
         with allure.step("Check size Web-installer file"):
             file_size = get_file_size(download_path)
-            assert (
-                file_size == 8567928
-            ), "Размер файла не соответствует 8.17 МБ"
+            assert file_size == 8567928, "Размер файла не соответствует 8.17 МБ"

@@ -23,6 +23,5 @@ def file_download(file_url):
         os.makedirs(Links.DOWNLOAD_PATH)
         with open(download_path, 'wb') as file:
             file.write(response.content)
-            # file_size = get_file_size(download_path)
         return download_path
     return None
