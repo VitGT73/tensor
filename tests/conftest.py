@@ -2,7 +2,7 @@ import shutil
 import os
 import pytest
 from selenium import webdriver
-from core.config.links import Links
+from core.config.settings import Settings
 
 # Imports to get chrome driver working
 from selenium.webdriver.chrome.service import Service
@@ -17,7 +17,7 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture(scope="session", autouse=True)
 def remove_download_directory():
     # Путь к папке, которую нужно удалить
-    directory_path = Links.DOWNLOAD_PATH
+    directory_path = Settings.DOWNLOAD_PATH
 
     # Удаление папки, если она существует
     if os.path.exists(directory_path):
@@ -50,7 +50,7 @@ def driver(request):
         )
     else:
         preferences = {
-            "download.default_directory": Links.DOWNLOAD_PATH,
+            "download.default_directory": Settings.DOWNLOAD_PATH,
         }
         options.add_experimental_option("prefs", preferences)
 

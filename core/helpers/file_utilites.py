@@ -1,10 +1,10 @@
 import os
 
 import requests
-from core.config.links import Links
+from core.config.settings import Settings
 
 def get_filename_with_path(filename):
-    return f"{Links.DOWNLOAD_PATH}/{filename}"
+    return f"{Settings.DOWNLOAD_PATH}/{filename}"
 
 def get_file_size(fullname):
     file_size_bytes = os.path.getsize(fullname)
@@ -20,7 +20,7 @@ def file_download(file_url):
     response = requests.get(file_url)
 
     if response.status_code == 200:
-        os.makedirs(Links.DOWNLOAD_PATH)
+        os.makedirs(Settings.DOWNLOAD_PATH)
         with open(download_path, 'wb') as file:
             file.write(response.content)
         return download_path

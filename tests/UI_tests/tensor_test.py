@@ -4,17 +4,17 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from core.helpers.base_test import BaseTest
-from core.config.links import Links
+from core.config.settings import Settings
 
 
 
 @allure.title("Тестовое задание от компании Тензор")
 
-class TestDefaultSuite(BaseTest):
+class TestTensorSuite(BaseTest):
 
     sbis_window = {}
     tenzor_window={}
-    home_region = Links.HOME_REGION
+    home_region = Settings.HOME_REGION
 
     # @pytest.mark.skip
     @allure.description("Сравнение размеров картинок в блоке 'Работаем'")

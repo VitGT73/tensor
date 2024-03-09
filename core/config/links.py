@@ -1,4 +1,3 @@
-
 import os
 
 class Links:
@@ -13,8 +12,3 @@ class Links:
     TENSOR_HOME_PAGE: str = f"{TENSOR_HOST}"
     TENSOR_ABOUT_PAGE: str = f"{TENSOR_HOST}/about"
 
-    # downloads path
-    DOWNLOAD_PATH:str = os.getcwd() + "/downloads"
-
-    # Home region
-    HOME_REGION = 'Оренбургская обл.'
