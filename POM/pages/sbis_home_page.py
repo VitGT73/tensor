@@ -18,6 +18,10 @@ class SbisHomePage(BasePage):
 
     def click_to_contacts_link(self):
         with allure.step("Click on 'Контакты' link"):
+            self.driver.execute_script(
+                "arguments[0].scrollIntoView(true);",
+                self.wait.until(EC.element_to_be_clickable(self.header.CONTACTS_LINK)),
+            )
             self.wait.until(
                 EC.element_to_be_clickable(self.header.CONTACTS_LINK)
             ).click()

@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from helpers.base_test import BaseTest
-from config.data import Data
+from config.links import Links
 
 
 
@@ -14,7 +14,7 @@ class TestDefaultSuite(BaseTest):
 
     sbis_window = {}
     tenzor_window={}
-    home_region = Data.HOME_REGION
+    home_region = Links.HOME_REGION
 
     # @pytest.mark.skip
     @allure.description("Сравнение размеров картинок в блоке 'Работаем'")

@@ -15,3 +15,6 @@ class Links:
 
     # downloads path
     DOWNLOAD_PATH:str = os.getcwd() + "/downloads"
+
+    # Home region
+    HOME_REGION = 'Оренбургская обл.'

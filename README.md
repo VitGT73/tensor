@@ -60,4 +60,6 @@ allure generate --clean
    # downloads path
     DOWNLOAD_PATH:str = os.getcwd() + "/downloads"
 ```
-Для ускорения выполнения тестов можно отключить `headless` режим. Для это нужно раскоментировать следующую строчку `# options.add_argument("--headless")` в файле `conftest.py`
+Для ускорения выполнения тестов, а так же для запуска тестов в docker контейнере или CI/CD нужно отключить `headless` режим. Для это нужно раскомментировать следующую строчку `# options.add_argument("--headless")` в файле `conftest.py`
+
+Если при попытке выполнить тесты в Браузере FireFox на Ubuntu выскакивает ошибка: "Your Firefox profile cannot be loaded. It may be missing or inaccessible." То необходимо переустановить FireFox, подробности [тут](https://stackoverflow.com/questions/72405117/selenium-geckodriver-profile-missing-your-firefox-profile-cannot-be-loaded) и [тут](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04)
