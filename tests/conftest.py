@@ -2,7 +2,7 @@ import shutil
 import os
 import pytest
 from selenium import webdriver
-from config.links import Links
+from core.config.links import Links
 
 # Imports to get chrome driver working
 from selenium.webdriver.chrome.service import Service

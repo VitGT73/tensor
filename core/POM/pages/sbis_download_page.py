@@ -1,11 +1,11 @@
 import allure
-from helpers.base_page import BasePage
-from helpers.file_utilites import file_download, get_file_size
-from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from POM.sections.sbis_header import SbisHeader
-from POM.sections.sbis_footer import SbisFooter
+from core.helpers.base_page import BasePage
+from core.helpers.file_utilites import file_download, get_file_size
+from core.config.links import Links
+from core.POM.sections.sbis_header import SbisHeader
+from core.POM.sections.sbis_footer import SbisFooter
 
 
 class SbisDownloadPage(BasePage):

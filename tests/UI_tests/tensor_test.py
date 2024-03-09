@@ -3,8 +3,8 @@ import allure
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from helpers.base_test import BaseTest
-from config.links import Links
+from core.helpers.base_test import BaseTest
+from core.config.links import Links
 
 
 

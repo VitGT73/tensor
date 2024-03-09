@@ -1,7 +1,7 @@
 import os
 
 import requests
-from config.links import Links
+from core.config.links import Links
 
 def get_filename_with_path(filename):
     return f"{Links.DOWNLOAD_PATH}/{filename}"

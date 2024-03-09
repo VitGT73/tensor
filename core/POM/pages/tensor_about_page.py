@@ -1,8 +1,8 @@
 import allure
-from helpers.base_page import BasePage
-from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from core.helpers.base_page import BasePage
+from core.config.links import Links
 
 
 

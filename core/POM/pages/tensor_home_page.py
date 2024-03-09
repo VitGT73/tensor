@@ -1,9 +1,9 @@
 import allure
-from helpers.base_page import BasePage
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from config.links import Links
+from core.helpers.base_page import BasePage
+from core.config.links import Links
 
 
 class TensorHomePage(BasePage):
