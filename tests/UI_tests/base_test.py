@@ -1,5 +1,5 @@
 import pytest
-from core.config.data import Data
+from core.config.settings import Settings
 from core.POM.pages.sbis_contacts_page import SbisContactsPage
 from core.POM.pages.sbis_home_page import SbisHomePage
 from core.POM.pages.sbis_download_page import SbisDownloadPage
@@ -9,12 +9,12 @@ from core.POM.pages.tensor_home_page import TensorHomePage
 
 class BaseTest:
 
-    data: Data
+    settings: Settings
 
     @pytest.fixture(autouse=True)
     def setup(self, request, driver):
         request.cls.driver = driver
-        request.cls.data = Data()
+        request.cls.settings = Settings()
 
         request.cls.sbis_home_page = SbisHomePage(driver)
         request.cls.sbis_contacts_page = SbisContactsPage(driver)

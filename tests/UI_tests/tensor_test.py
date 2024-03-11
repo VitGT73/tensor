@@ -3,18 +3,14 @@ import allure
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from core.helpers.base_test import BaseTest
-from core.config.settings import Settings
-
-
+from core.config import settings
+from tests.UI_tests.base_test import BaseTest
 
 @allure.title("Тестовое задание от компании Тензор")
-
 class TestTensorSuite(BaseTest):
 
     sbis_window = {}
     tenzor_window={}
-    home_region = Settings.HOME_REGION
 
     # @pytest.mark.skip
     @allure.description("Сравнение размеров картинок в блоке 'Работаем'")
@@ -42,7 +38,7 @@ class TestTensorSuite(BaseTest):
         self.sbis_home_page.is_opened()
         self.sbis_home_page.click_to_contacts_link()
         self.sbis_contacts_page.is_opened()
-        self.sbis_contacts_page.this_region_is_checked(self.home_region)
+        self.sbis_contacts_page.this_region_is_checked(self.settings.HOME_REGION)
         self.sbis_contacts_page.open_regions_list()
         self.sbis_contacts_page.is_region_list_loaded()
         self.sbis_contacts_page.click_region_link('Камчатский край')

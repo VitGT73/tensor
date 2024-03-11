@@ -3,9 +3,9 @@ FROM python:3.10-alpine3.19
 RUN echo "https://dl-4.alpinelinux.org/alpine/v3.19/main" >> /etc/apk/repositories && \
     echo "https://dl-4.alpinelinux.org/alpine/v3.19/community" >> /etc/apk/repositories
 
-# # install chromedriver
-# RUN apk update \
-#     && apk add --no-cache chromium chromium-chromedriver tzdata
+# install chromedriver
+RUN apk update \
+    && apk add --no-cache chromium chromium-chromedriver tzdata
 
 # Get all the prereqs
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
@@ -28,6 +28,8 @@ COPY ./requirements.txt /usr/workspace/
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
+COPY ./tests/ /usr/workspace/tests/
+COPY ./core/ /usr/workspace/core/
 # Create a directory for allure-results and set permissions
-RUN mkdir /usr/workspace/allure-results && chown -R 1000:1000 /usr/workspace/allure-results
-# CMD ["pytest"]
+# RUN mkdir /usr/workspace/allure-results && chown -R $USER:$USER /usr/workspace/allure-results
+CMD ["pytest"]

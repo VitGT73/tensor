@@ -63,3 +63,19 @@ allure generate --clean
 Для ускорения выполнения тестов, а так же для запуска тестов в docker контейнере или CI/CD нужно отключить `headless` режим. Для это нужно раскомментировать следующую строчку `# options.add_argument("--headless")` в файле `conftest.py`
 
 Если при попытке выполнить тесты в Браузере FireFox на Ubuntu выскакивает ошибка: "Your Firefox profile cannot be loaded. It may be missing or inaccessible." То необходимо переустановить FireFox, подробности [тут](https://stackoverflow.com/questions/72405117/selenium-geckodriver-profile-missing-your-firefox-profile-cannot-be-loaded) и [тут](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04)
+
+```bash
+docker pull selenium/standalone-chrome
+```
+``` bash
+docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
+```
+
+Запуск docker-compose с условием его завершения одновременно с сервисом `pytest`
+```bash
+docker compose up --exit-code-from pytest
+```
+Запуск docker-compose из другой папки и с другим именем:
+```bash
+docker compose -f docs/docker-compose-hub.yml up
+```
