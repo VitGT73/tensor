@@ -1,0 +1,64 @@
+version: '3'
+
+services:
+  selenium-hub:
+    image: selenium/hub:4.18.1-20240224
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+    healthcheck:
+      test: [ "CMD", "/opt/bin/check-grid.sh --host localhost --port 4444" ]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - grid
+
+  chrome:
+    image: selenium/node-chrome:4.18.1-20240224
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    networks:
+      - grid
+
+  firefox:
+    image: selenium/node-firefox:4.18.1-20240224
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    networks:
+      - grid
+
+  pytest:
+    image: pytest:v1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /bin/sh -c "ls -la && pytest -sv --alluredir=allure-results"
+    working_dir: /usr/workspace
+    depends_on:
+      selenium-hub:
+        condition: service_healthy
+    environment:
+      - SELENIUM_GRID_USE=1
+      - LOGIN=${LOGIN}
+      - PASSWORD=${PASSWORD}
+    volumes:
+      - ./allure-results:/usr/workspace/allure-results
+    networks:
+      - grid
+      
+networks:
+  grid:
+    name: grid

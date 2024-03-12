@@ -12,7 +12,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -38,34 +39,37 @@ def pytest_addoption(parser):
 @pytest.fixture()
 def driver(request):
     browser = request.config.getoption("--browser")
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--window-size=1920,1080")
+    crome_options = ChromeOptions()
+    crome_options.add_argument("--headless")
+    crome_options.add_argument("--window-size=1920,1080")
     print('\nSELENIUM_GRID_USE: ', Settings.SELENIUM_GRID_USE)
     if Settings.SELENIUM_GRID_USE=='1':
-        options.add_argument("--ignore-ssl-errors=yes")
-        options.add_argument("--ignore-certificate-errors")
+        # For run in docker with Selenium Grid
+        crome_options.add_argument("--ignore-ssl-errors=yes")
+        crome_options.add_argument("--ignore-certificate-errors")
         driver = webdriver.Remote(
-            command_executor="http://selenium-hub:4444/wd/hub", options=options
+            command_executor="http://selenium-hub:4444/wd/hub", options=crome_options
         )
     else:
         # For run in Docker
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-        # Setup
+        crome_options.add_argument("--no-sandbox")
+        crome_options.add_argument("--disable-dev-shm-usage")
+               # Setup
         print(f"\nSetting up: {browser} driver")
         if browser == "firefox":
+            firefox_options = FirefoxOptions()
+            firefox_options.add_argument("-headless")
             driver = webdriver.Firefox(
-                service=FirefoxService(GeckoDriverManager().install())
+                service=FirefoxService(GeckoDriverManager().install()), options=firefox_options
             )
         else:
             preferences = {
                 "download.default_directory": Settings.DOWNLOAD_PATH,
             }
-            options.add_experimental_option("prefs", preferences)
+            crome_options.add_experimental_option("prefs", preferences)
 
             driver = webdriver.Chrome(
-                service=Service(ChromeDriverManager().install()), options=options
+                service=Service(ChromeDriverManager().install()), options=crome_options
             )
 
     # Implicit wait setup for our framework
