@@ -113,3 +113,4 @@ driver = webdriver.Remote(
 ### Запуск в GitHub action
 
 
+trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&

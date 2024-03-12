@@ -47,8 +47,7 @@ services:
       dockerfile: Dockerfile
 
     command: >
-      /bin/sh -c "trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&
-      ls -la &&
+      /bin/sh -c "ls -la &&
       pytest --browser=chrome -sv --alluredir=allure-results &&
       cp -R ./allure-report/history/ ./allure-results/history &&
       allure generate --clean &&
