@@ -53,7 +53,9 @@ services:
       allure generate --clean &&
       pytest --browser=firefox -sv --alluredir=allure-results &&
       cp -R ./allure-report/history/ ./allure-results/history &&
-      allure generate --clean"
+      ls -la &&
+      allure generate --clean &&
+      ls -la"
     working_dir: /usr/workspace
     depends_on:
       selenium-hub:
