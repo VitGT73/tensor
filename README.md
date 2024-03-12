@@ -113,9 +113,3 @@ driver = webdriver.Remote(
 ### Запуск в GitHub action
 
 
-
-
-
-
-mkdir ./allure-results/history && cp -R ./allure-report/history/ ./allure/results/history
-cp -R ./allure-report/history/ ./allure-results/history
