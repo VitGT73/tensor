@@ -47,12 +47,6 @@ pip install -r requirements.txt
 ```bash
 pytest
 ```
-6. Генерация отчета Allure:
-```bash
-allure generate --clean
-```
-7. Сгенерированный отчет будет находиться в папке `allure-report` в файле `index.html`
-
 
 Для корректной работы тестов необходимо указать ваш домашний регион в файле `core.config.settings.py`:
 ```HOME_REGION = 'Ваш регион.'```. Например: ```HOME_REGION = 'Оренбургская обл.'```
@@ -66,18 +60,62 @@ allure generate --clean
 
 Если при попытке выполнить тесты в Браузере FireFox на Ubuntu выскакивает ошибка: "Your Firefox profile cannot be loaded. It may be missing or inaccessible." То необходимо переустановить FireFox, подробности [тут](https://stackoverflow.com/questions/72405117/selenium-geckodriver-profile-missing-your-firefox-profile-cannot-be-loaded) и [тут](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04)
 
+
+### Allure отчет
+
+1. Запуск тестов с выгрузкой файлов для allure-отчета:
 ```bash
-docker pull selenium/standalone-chrome
+pytest --browser=chrome -sv --alluredir=allure-results
 ```
-``` bash
-docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
+или для FireFox:
+```bash
+pytest --browser=firefox -sv --alluredir=allure-results
 ```
+2. Чтобы сохранялась история, перед генерацией отчета, необходимо в папку с результатами прогона скопировать историю
+```bash
+cp -R ./allure-report/history/ ./allure-results/history
+```
+3. Генерация готового отчета выполняется командой:
+```bash
+allure generate --clean
+```
+4. Сгенерированный отчет будет находиться в папке `allure-report` в файле `index.html`
+
+
+
+### Запуск тестов через Docker-compose
 
 Запуск docker-compose с условием его завершения одновременно с сервисом `pytest`
 ```bash
 docker compose up --exit-code-from pytest
 ```
+
+##### Другие варианты запуска
+
+Запускаем тесты локально, но браузеры запускаются в Grid сетке.
+
 Запуск docker-compose из другой папки и с другим именем:
 ```bash
-docker compose -f docs/docker-compose-hub.yml up
+docker compose -f docs/docker-compose-hub.yml up --detach
 ```
+или только один контейнер, только для Chrome
+``` bash
+docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
+```
+**ВАЖНО:** в этом варианте запуска тестов необходимо подправить conftest.py в секции для браузера Chrome:
+```python
+driver = webdriver.Remote(
+    command_executor="http://selenium-hub:4444/wd/hub", options=chrome_options
+)
+```
+необходимо в URL изменить `selenium-hub` на `localhost`
+
+### Запуск в GitHub action
+
+
+
+
+
+
+mkdir ./allure-results/history && cp -R ./allure-report/history/ ./allure/results/history
+cp -R ./allure-report/history/ ./allure-results/history

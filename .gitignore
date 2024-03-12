@@ -8,3 +8,4 @@ allure-report
 .venv
 **/__pycache__
 downloads
+.vscode

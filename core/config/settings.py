@@ -13,5 +13,8 @@ class Settings:
     # Use browsers from Selenium grid Docker
     SELENIUM_GRID_USE = os.getenv("SELENIUM_GRID_USE")
 
+
     # LOGIN = os.getenv("LOGIN")
     # PASSWORD = os.getenv("PASSWORD")
+
+settings = Settings()

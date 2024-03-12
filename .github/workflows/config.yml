@@ -1,0 +1,24 @@
+name: UI Tests
+
+on: [push]
+
+jobs:
+  ui-tests:
+    runs-on: ubuntu-latest
+
+      steps:
+        - uses: actions/checkout@v2
+
+        - name: Run UI-tests via docker-compose
+          env:
+            SELENIUM_GRID_USE=0
+          run:
+            docker compose up --exit-code-from pytest || true
+
+        - name: Deploy to Github Pages
+          uses: JamesIves/github-pages-deploy-action@4.1.5
+          with:
+            token: ${{ secret.GHP_TOKEN }}
+            branch: gh-pages
+            folder: allure-report
+            clean: true

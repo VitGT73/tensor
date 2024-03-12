@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  selenium-hub:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium-hub
+    ports:
+      - 4444:4444
+      - 7900:7900
+    shm_size: 2g
+    healthcheck:
+      test: ["CMD", "curl", "-s", "http://localhost:4444/wd/hub/status"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  pytest:
+    image: pytest:v1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    command: >
+      /bin/sh -c "trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&
+      ls -la &&
+      pytest -sv --alluredir=allure-results &&
+      allure generate --clean"
+    working_dir: /usr/workspace
+    depends_on:
+      selenium-hub:
+        condition: service_healthy
+    environment:
+      - SELENIUM_GRID_USE=1
+      - LOGIN=${LOGIN}
+      - PASSWORD=${PASSWORD}
+    volumes:
+      - ./:/usr/workspace
+
+networks:
+  grid:
