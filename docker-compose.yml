@@ -63,10 +63,8 @@ services:
       - LOGIN=${LOGIN}
       - PASSWORD=${PASSWORD}
     volumes:
-      - ./tests/:/usr/workspace/tests/
-      - ./core/:/usr/workspace/core/
-      - ./allure-report/:/usr/workspace/allure-report/
-      - ./allure-results/:/usr/workspace/allure-results/
+      - ./:/usr/workspace
+
     networks:
       grid:
 
