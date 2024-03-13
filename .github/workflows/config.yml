@@ -23,10 +23,8 @@ jobs:
           run: docker-compose -f docker-compose-pytest.yml up -d
 
         - name: Run UI-tests
-          env:
-            CI: 1
           run: |
-            docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results || true
+            CI=1 docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results || true
 
         - name: Copy history from gh-pages to allure-results before run Allure-generate
           run: |

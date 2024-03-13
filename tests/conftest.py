@@ -100,7 +100,6 @@ def pytest_exception_interact(node, call, report):
         # Получаем доступ к драйверу (предполагая, что используется фикстура 'driver')
         driver = node.funcargs['driver']
         browser = driver.capabilities['browserName']
-        print(browser)
         time.sleep(1)
         # Создаем скриншот и прикрепляем его к отчету Allure
         allure.attach(
