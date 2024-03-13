@@ -5,7 +5,7 @@ load_dotenv()
 
 class Settings:
     # downloads path
-    CI: str = os.getenv("CI")
+    CI = os.getenv("CI")
     DOWNLOAD_PATH: str = os.getcwd() + "/downloads"
 
     # Home region
