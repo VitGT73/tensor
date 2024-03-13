@@ -1,12 +1,12 @@
 {
-  "uid" : "dceac55a1f11cd83",
+  "uid" : "7cf7c4cc7b2a115",
   "name" : "test_first_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_first_scenario",
   "historyId" : "0d3472aee69ab5c8a4e8dc2f3bce6cfd",
   "time" : {
-    "start" : 1710327346110,
-    "stop" : 1710327362021,
-    "duration" : 15911
+    "start" : 1710329272067,
+    "stop" : 1710329289923,
+    "duration" : 17856
   },
   "description" : "Сравнение размеров картинок в блоке 'Работаем'",
   "descriptionHtml" : "<p>Сравнение размеров картинок в блоке 'Работаем'</p>\n",
@@ -14,50 +14,50 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "setup",
-    "time" : {
-      "start" : 1710327346109,
-      "stop" : 1710327346110,
-      "duration" : 1
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "driver",
-    "time" : {
-      "start" : 1710327345570,
-      "stop" : 1710327346109,
-      "duration" : 539
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
     "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710327345570,
-      "stop" : 1710327345570,
+      "start" : 1710329271512,
+      "stop" : 1710329271512,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1710329272066,
+      "stop" : 1710329272066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1710329271512,
+      "stop" : 1710329272066,
+      "duration" : 554
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "testStage" : {
     "description" : "Сравнение размеров картинок в блоке 'Работаем'",
@@ -65,227 +65,227 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710327346110,
-        "stop" : 1710327352580,
-        "duration" : 6470
+        "start" : 1710329272067,
+        "stop" : 1710329277370,
+        "duration" : 5303
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710327352580,
-        "stop" : 1710327352603,
+        "start" : 1710329277370,
+        "stop" : 1710329277384,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on 'Контакты' link",
+      "time" : {
+        "start" : 1710329277384,
+        "stop" : 1710329279594,
+        "duration" : 2210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://sbis.ru/contacts is opened",
+      "time" : {
+        "start" : 1710329279594,
+        "stop" : 1710329280728,
+        "duration" : 1134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click to Tensor banner",
+      "time" : {
+        "start" : 1710329280737,
+        "stop" : 1710329280856,
+        "duration" : 119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Switch to https://tensor.ru page",
+      "time" : {
+        "start" : 1710329280856,
+        "stop" : 1710329281783,
+        "duration" : 927
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://tensor.ru is opened",
+      "time" : {
+        "start" : 1710329281788,
+        "stop" : 1710329285204,
+        "duration" : 3416
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Block 'Сила в людях' is present",
+      "time" : {
+        "start" : 1710329285204,
+        "stop" : 1710329285227,
         "duration" : 23
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Click on 'Контакты' link",
-      "time" : {
-        "start" : 1710327352603,
-        "stop" : 1710327355183,
-        "duration" : 2580
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
+      "hasContent" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Page https://sbis.ru/contacts is opened",
-      "time" : {
-        "start" : 1710327355183,
-        "stop" : 1710327356282,
-        "duration" : 1099
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Click to Tensor banner",
-      "time" : {
-        "start" : 1710327356290,
-        "stop" : 1710327356382,
-        "duration" : 92
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Switch to https://tensor.ru page",
-      "time" : {
-        "start" : 1710327356382,
-        "stop" : 1710327357563,
-        "duration" : 1181
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Page https://tensor.ru is opened",
-      "time" : {
-        "start" : 1710327357568,
-        "stop" : 1710327360597,
-        "duration" : 3029
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Block 'Сила в людях' is present",
-      "time" : {
-        "start" : 1710327360598,
-        "stop" : 1710327360620,
-        "duration" : 22
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Link 'Подробнее' is present",
       "time" : {
-        "start" : 1710327360620,
-        "stop" : 1710327360675,
-        "duration" : 55
+        "start" : 1710329285227,
+        "stop" : 1710329285287,
+        "duration" : 60
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Click on 'Подробнее' link",
       "time" : {
-        "start" : 1710327360675,
-        "stop" : 1710327361826,
-        "duration" : 1151
+        "start" : 1710329285288,
+        "stop" : 1710329289751,
+        "duration" : 4463
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Page https://tensor.ru/about is opened",
       "time" : {
-        "start" : 1710327361826,
-        "stop" : 1710327361836,
+        "start" : 1710329289751,
+        "stop" : 1710329289761,
         "duration" : 10
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Block 'Работаем' is present",
       "time" : {
-        "start" : 1710327361836,
-        "stop" : 1710327361851,
-        "duration" : 15
+        "start" : 1710329289761,
+        "stop" : 1710329289779,
+        "duration" : 18
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
     }, {
       "name" : "Checking that the images in the block 'Работаем' are the same size",
       "time" : {
-        "start" : 1710327361852,
-        "stop" : 1710327362021,
-        "duration" : 169
+        "start" : 1710329289779,
+        "stop" : 1710329289923,
+        "duration" : 144
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "a935f026f67a0be7",
+        "uid" : "78ae306a68f90260",
         "name" : "All images are the same size: 272 x 193",
-        "source" : "a935f026f67a0be7.txt",
+        "source" : "78ae306a68f90260.txt",
         "type" : "text/plain",
         "size" : 7
       } ],
       "parameters" : [ ],
-      "attachmentsCount" : 1,
-      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : true
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 13,
-    "hasContent" : true
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710327362022,
-      "stop" : 1710327362130,
-      "duration" : 108
+      "start" : 1710329289924,
+      "stop" : 1710329290034,
+      "duration" : 110
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
   } ],
   "labels" : [ {
     "name" : "parentSuite",
@@ -298,7 +298,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "aee6eea8a12d"
+    "value" : "24e78476851e"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -328,11 +328,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 4,
+        "passed" : 5,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "dceac55a1f11cd83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710327346110,
+          "stop" : 1710327362021,
+          "duration" : 15911
+        }
+      }, {
         "uid" : "caef73d5a16621f6",
         "status" : "passed",
         "time" : {
@@ -360,6 +368,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "dceac55a1f11cd83.json",
+  "source" : "7cf7c4cc7b2a115.json",
   "parameterValues" : [ ]
 }
