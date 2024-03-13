@@ -2,13 +2,22 @@
   "88684a98bb28e589fd77f4810ecf80ed" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
       "passed" : 24,
       "unknown" : 0,
-      "total" : 29
+      "total" : 30
     },
     "items" : [ {
+      "uid" : "5d6e5cd78e4f8d8b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1710348030888,
+        "stop" : 1710348048323,
+        "duration" : 17435
+      }
+    }, {
       "uid" : "9825d969535a64e2",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -163,14 +172,6 @@
         "stop" : 1710244857046,
         "duration" : 6296
       }
-    }, {
-      "uid" : "f38eac85f49e8a82",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710244661651,
-        "stop" : 1710244666317,
-        "duration" : 4666
-      }
     } ]
   },
   "f0a889dc4acb2eda17a70e7e90de8b77" : {
@@ -178,11 +179,19 @@
       "failed" : 0,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 26,
+      "passed" : 27,
       "unknown" : 0,
-      "total" : 29
+      "total" : 30
     },
     "items" : [ {
+      "uid" : "878c000e08c34e02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710348049893,
+        "stop" : 1710348061028,
+        "duration" : 11135
+      }
+    }, {
       "uid" : "afd069186f126db7",
       "status" : "passed",
       "time" : {
@@ -335,15 +344,6 @@
         "stop" : 1710244867358,
         "duration" : 6747
       }
-    }, {
-      "uid" : "f144626a2fd73a00",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
-      "time" : {
-        "start" : 1710244668984,
-        "stop" : 1710244672701,
-        "duration" : 3717
-      }
     } ]
   },
   "0d3472aee69ab5c8a4e8dc2f3bce6cfd" : {
@@ -351,11 +351,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 24,
       "unknown" : 0,
-      "total" : 29
+      "total" : 30
     },
     "items" : [ {
+      "uid" : "98783aaa07ea0ceb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710348017379,
+        "stop" : 1710348030566,
+        "duration" : 13187
+      }
+    }, {
       "uid" : "c5528f21aaa59992",
       "status" : "passed",
       "time" : {
@@ -510,15 +518,6 @@
         "start" : 1710244841400,
         "stop" : 1710244847865,
         "duration" : 6465
-      }
-    }, {
-      "uid" : "661e865c9bb7619a",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
-      "time" : {
-        "start" : 1710244652290,
-        "stop" : 1710244658243,
-        "duration" : 5953
       }
     } ]
   }

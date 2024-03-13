@@ -1,12 +1,12 @@
 {
-  "uid" : "afd069186f126db7",
+  "uid" : "878c000e08c34e02",
   "name" : "test_third_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_third_scenario",
   "historyId" : "f0a889dc4acb2eda17a70e7e90de8b77",
   "time" : {
-    "start" : 1710338693448,
-    "stop" : 1710338708774,
-    "duration" : 15326
+    "start" : 1710348049893,
+    "stop" : 1710348061028,
+    "duration" : 11135
   },
   "description" : "Загрузка Sbis-plugin для Windows",
   "descriptionHtml" : "<p>Загрузка Sbis-plugin для Windows</p>\n",
@@ -14,10 +14,10 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "remove_download_directory",
+    "name" : "setup",
     "time" : {
-      "start" : 1710338658929,
-      "stop" : 1710338658929,
+      "start" : 1710348049892,
+      "stop" : 1710348049892,
       "duration" : 0
     },
     "status" : "passed",
@@ -29,10 +29,10 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "setup",
+    "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710338693447,
-      "stop" : 1710338693447,
+      "start" : 1710348016739,
+      "stop" : 1710348016739,
       "duration" : 0
     },
     "status" : "passed",
@@ -46,9 +46,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1710338693269,
-      "stop" : 1710338693447,
-      "duration" : 178
+      "start" : 1710348049674,
+      "stop" : 1710348049892,
+      "duration" : 218
     },
     "status" : "passed",
     "steps" : [ ],
@@ -65,9 +65,9 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710338693448,
-        "stop" : 1710338697464,
-        "duration" : 4016
+        "start" : 1710348049893,
+        "stop" : 1710348053313,
+        "duration" : 3420
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "Open Sbis Download page",
       "time" : {
-        "start" : 1710338697464,
-        "stop" : 1710338703867,
-        "duration" : 6403
+        "start" : 1710348053314,
+        "stop" : 1710348056641,
+        "duration" : 3327
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,9 +95,9 @@
     }, {
       "name" : "Page https://sbis.ru/download is opened",
       "time" : {
-        "start" : 1710338703867,
-        "stop" : 1710338703916,
-        "duration" : 49
+        "start" : 1710348056641,
+        "stop" : 1710348056706,
+        "duration" : 65
       },
       "status" : "passed",
       "steps" : [ ],
@@ -110,9 +110,9 @@
     }, {
       "name" : "Click on 'СБИС Плагин' link",
       "time" : {
-        "start" : 1710338703916,
-        "stop" : 1710338705580,
-        "duration" : 1664
+        "start" : 1710348056706,
+        "stop" : 1710348058265,
+        "duration" : 1559
       },
       "status" : "passed",
       "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "Section Plugin is opened",
       "time" : {
-        "start" : 1710338705580,
-        "stop" : 1710338705588,
-        "duration" : 8
+        "start" : 1710348058266,
+        "stop" : 1710348058281,
+        "duration" : 15
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,9 +140,9 @@
     }, {
       "name" : "Download web-installer",
       "time" : {
-        "start" : 1710338705588,
-        "stop" : 1710338708774,
-        "duration" : 3186
+        "start" : 1710348058281,
+        "stop" : 1710348061028,
+        "duration" : 2747
       },
       "status" : "passed",
       "steps" : [ ],
@@ -155,8 +155,8 @@
     }, {
       "name" : "Check size Web-installer file",
       "time" : {
-        "start" : 1710338708774,
-        "stop" : 1710338708774,
+        "start" : 1710348061028,
+        "stop" : 1710348061028,
         "duration" : 0
       },
       "status" : "passed",
@@ -178,9 +178,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710338708775,
-      "stop" : 1710338708872,
-      "duration" : 97
+      "start" : 1710348061029,
+      "stop" : 1710348061128,
+      "duration" : 99
     },
     "status" : "passed",
     "steps" : [ ],
@@ -202,7 +202,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "15829065d7d2"
+    "value" : "fe545962fa30"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -232,11 +232,19 @@
         "failed" : 0,
         "broken" : 3,
         "skipped" : 0,
-        "passed" : 26,
+        "passed" : 27,
         "unknown" : 0,
-        "total" : 29
+        "total" : 30
       },
       "items" : [ {
+        "uid" : "afd069186f126db7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710338693448,
+          "stop" : 1710338708774,
+          "duration" : 15326
+        }
+      }, {
         "uid" : "31caf66ba764ea19",
         "status" : "passed",
         "time" : {
@@ -390,18 +398,10 @@
           "stop" : 1710244672701,
           "duration" : 3717
         }
-      }, {
-        "uid" : "7fcf2b3a6dcb0ff2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1710244459524,
-          "stop" : 1710244466521,
-          "duration" : 6997
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "afd069186f126db7.json",
+  "source" : "878c000e08c34e02.json",
   "parameterValues" : [ ]
 }

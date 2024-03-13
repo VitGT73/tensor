@@ -1,12 +1,12 @@
 {
-  "uid" : "c5528f21aaa59992",
+  "uid" : "98783aaa07ea0ceb",
   "name" : "test_first_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_first_scenario",
   "historyId" : "0d3472aee69ab5c8a4e8dc2f3bce6cfd",
   "time" : {
-    "start" : 1710338659467,
-    "stop" : 1710338674834,
-    "duration" : 15367
+    "start" : 1710348017379,
+    "stop" : 1710348030566,
+    "duration" : 13187
   },
   "description" : "Сравнение размеров картинок в блоке 'Работаем'",
   "descriptionHtml" : "<p>Сравнение размеров картинок в блоке 'Работаем'</p>\n",
@@ -16,24 +16,9 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1710338659466,
-      "stop" : 1710338659466,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "remove_download_directory",
-    "time" : {
-      "start" : 1710338658929,
-      "stop" : 1710338658929,
-      "duration" : 0
+      "start" : 1710348017378,
+      "stop" : 1710348017379,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -46,9 +31,24 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1710338658930,
-      "stop" : 1710338659466,
-      "duration" : 536
+      "start" : 1710348016739,
+      "stop" : 1710348017378,
+      "duration" : 639
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "remove_download_directory",
+    "time" : {
+      "start" : 1710348016739,
+      "stop" : 1710348016739,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -65,9 +65,9 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710338659467,
-        "stop" : 1710338665857,
-        "duration" : 6390
+        "start" : 1710348017379,
+        "stop" : 1710348022087,
+        "duration" : 4708
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710338665857,
-        "stop" : 1710338665880,
-        "duration" : 23
+        "start" : 1710348022087,
+        "stop" : 1710348022122,
+        "duration" : 35
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,9 +95,9 @@
     }, {
       "name" : "Click on 'Контакты' link",
       "time" : {
-        "start" : 1710338665880,
-        "stop" : 1710338668392,
-        "duration" : 2512
+        "start" : 1710348022122,
+        "stop" : 1710348024409,
+        "duration" : 2287
       },
       "status" : "passed",
       "steps" : [ ],
@@ -110,9 +110,9 @@
     }, {
       "name" : "Page https://sbis.ru/contacts is opened",
       "time" : {
-        "start" : 1710338668392,
-        "stop" : 1710338669512,
-        "duration" : 1120
+        "start" : 1710348024409,
+        "stop" : 1710348025565,
+        "duration" : 1156
       },
       "status" : "passed",
       "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "Click to Tensor banner",
       "time" : {
-        "start" : 1710338669519,
-        "stop" : 1710338669617,
-        "duration" : 98
+        "start" : 1710348025576,
+        "stop" : 1710348025708,
+        "duration" : 132
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,9 +140,9 @@
     }, {
       "name" : "Switch to https://tensor.ru page",
       "time" : {
-        "start" : 1710338669617,
-        "stop" : 1710338670756,
-        "duration" : 1139
+        "start" : 1710348025708,
+        "stop" : 1710348026789,
+        "duration" : 1081
       },
       "status" : "passed",
       "steps" : [ ],
@@ -155,9 +155,9 @@
     }, {
       "name" : "Page https://tensor.ru is opened",
       "time" : {
-        "start" : 1710338670761,
-        "stop" : 1710338673325,
-        "duration" : 2564
+        "start" : 1710348026796,
+        "stop" : 1710348029116,
+        "duration" : 2320
       },
       "status" : "passed",
       "steps" : [ ],
@@ -170,9 +170,9 @@
     }, {
       "name" : "Block 'Сила в людях' is present",
       "time" : {
-        "start" : 1710338673325,
-        "stop" : 1710338673344,
-        "duration" : 19
+        "start" : 1710348029116,
+        "stop" : 1710348029148,
+        "duration" : 32
       },
       "status" : "passed",
       "steps" : [ ],
@@ -185,9 +185,9 @@
     }, {
       "name" : "Link 'Подробнее' is present",
       "time" : {
-        "start" : 1710338673344,
-        "stop" : 1710338673402,
-        "duration" : 58
+        "start" : 1710348029149,
+        "stop" : 1710348029250,
+        "duration" : 101
       },
       "status" : "passed",
       "steps" : [ ],
@@ -200,9 +200,9 @@
     }, {
       "name" : "Click on 'Подробнее' link",
       "time" : {
-        "start" : 1710338673402,
-        "stop" : 1710338674548,
-        "duration" : 1146
+        "start" : 1710348029251,
+        "stop" : 1710348030261,
+        "duration" : 1010
       },
       "status" : "passed",
       "steps" : [ ],
@@ -215,9 +215,9 @@
     }, {
       "name" : "Page https://tensor.ru/about is opened",
       "time" : {
-        "start" : 1710338674548,
-        "stop" : 1710338674619,
-        "duration" : 71
+        "start" : 1710348030261,
+        "stop" : 1710348030331,
+        "duration" : 70
       },
       "status" : "passed",
       "steps" : [ ],
@@ -230,9 +230,9 @@
     }, {
       "name" : "Block 'Работаем' is present",
       "time" : {
-        "start" : 1710338674619,
-        "stop" : 1710338674636,
-        "duration" : 17
+        "start" : 1710348030331,
+        "stop" : 1710348030352,
+        "duration" : 21
       },
       "status" : "passed",
       "steps" : [ ],
@@ -245,16 +245,16 @@
     }, {
       "name" : "Checking that the images in the block 'Работаем' are the same size",
       "time" : {
-        "start" : 1710338674636,
-        "stop" : 1710338674834,
-        "duration" : 198
+        "start" : 1710348030352,
+        "stop" : 1710348030566,
+        "duration" : 214
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "31501dcc9e1e09a6",
+        "uid" : "3d167dc0f989ff09",
         "name" : "All images are the same size: 272 x 193",
-        "source" : "31501dcc9e1e09a6.txt",
+        "source" : "3d167dc0f989ff09.txt",
         "type" : "text/plain",
         "size" : 7
       } ],
@@ -274,9 +274,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710338674835,
-      "stop" : 1710338674944,
-      "duration" : 109
+      "start" : 1710348030568,
+      "stop" : 1710348030689,
+      "duration" : 121
     },
     "status" : "passed",
     "steps" : [ ],
@@ -298,7 +298,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "15829065d7d2"
+    "value" : "fe545962fa30"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -328,11 +328,19 @@
         "failed" : 0,
         "broken" : 6,
         "skipped" : 0,
-        "passed" : 23,
+        "passed" : 24,
         "unknown" : 0,
-        "total" : 29
+        "total" : 30
       },
       "items" : [ {
+        "uid" : "c5528f21aaa59992",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710338659467,
+          "stop" : 1710338674834,
+          "duration" : 15367
+        }
+      }, {
         "uid" : "80f7a0c2946eb90d",
         "status" : "passed",
         "time" : {
@@ -489,19 +497,10 @@
           "stop" : 1710244658243,
           "duration" : 5953
         }
-      }, {
-        "uid" : "ec9b37666d3665bb",
-        "status" : "broken",
-        "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
-        "time" : {
-          "start" : 1710244442806,
-          "stop" : 1710244448858,
-          "duration" : 6052
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "c5528f21aaa59992.json",
+  "source" : "98783aaa07ea0ceb.json",
   "parameterValues" : [ ]
 }
