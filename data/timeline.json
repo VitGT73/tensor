@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "8e7a4e7d7171",
+    "name" : "704058ce686c",
     "children" : [ {
       "name" : "7-MainThread",
       "children" : [ {
-        "name" : "test_second_scenario",
-        "uid" : "5723fba9dd355ef4",
-        "parentUid" : "389cb65a826624f101797613d077afc9",
-        "status" : "passed",
-        "time" : {
-          "start" : 1710354722696,
-          "stop" : 1710354732116,
-          "duration" : 9420
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "test_third_scenario",
-        "uid" : "1faa8d22b9782a03",
-        "parentUid" : "389cb65a826624f101797613d077afc9",
+        "uid" : "fffa6fd8210200d6",
+        "parentUid" : "2b19e5967f62479290f1db33203e2644",
         "status" : "passed",
         "time" : {
-          "start" : 1710354732395,
-          "stop" : 1710354750449,
-          "duration" : 18054
+          "start" : 1710355322883,
+          "stop" : 1710355339275,
+          "duration" : 16392
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_first_scenario",
-        "uid" : "58b0e763965e4852",
-        "parentUid" : "389cb65a826624f101797613d077afc9",
+        "uid" : "ea28737506e7a055",
+        "parentUid" : "2b19e5967f62479290f1db33203e2644",
         "status" : "passed",
         "time" : {
-          "start" : 1710354706686,
-          "stop" : 1710354722399,
-          "duration" : 15713
+          "start" : 1710355294734,
+          "stop" : 1710355310311,
+          "duration" : 15577
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_second_scenario",
+        "uid" : "4b985f24a79303f4",
+        "parentUid" : "2b19e5967f62479290f1db33203e2644",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710355310637,
+          "stop" : 1710355322612,
+          "duration" : 11975
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "389cb65a826624f101797613d077afc9"
+      "uid" : "2b19e5967f62479290f1db33203e2644"
     } ],
-    "uid" : "7957e0fcccc7e8b30c1f5803ab862b8a"
+    "uid" : "c6703fc2a514cbf52e5dd012132a9e0d"
   } ],
   "name" : "timeline"
 }
