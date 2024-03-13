@@ -1,9 +1,9 @@
 [ {
   "data" : {
     "failed" : 0,
-    "broken" : 1,
+    "broken" : 2,
     "skipped" : 0,
-    "passed" : 2,
+    "passed" : 1,
     "unknown" : 0,
     "total" : 3
   }
@@ -49,6 +49,24 @@
     "broken" : 1,
     "skipped" : 0,
     "passed" : 2,
+    "unknown" : 0,
+    "total" : 3
+  }
+}, {
+  "data" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 3
+  }
+}, {
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 3,
     "unknown" : 0,
     "total" : 3
   }
@@ -91,15 +109,6 @@
 }, {
   "data" : {
     "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "data" : {
-    "failed" : 0,
     "broken" : 1,
     "skipped" : 0,
     "passed" : 2,
@@ -112,15 +121,6 @@
     "broken" : 1,
     "skipped" : 0,
     "passed" : 2,
-    "unknown" : 0,
-    "total" : 3
-  }
-}, {
-  "data" : {
-    "failed" : 0,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 3,
     "unknown" : 0,
     "total" : 3
   }
