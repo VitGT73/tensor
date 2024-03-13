@@ -24,7 +24,7 @@ jobs:
 
         - name: Run UI-tests
           env:
-            SELENIUM_GRID_USE: 0
+            SELENIUM_GRID_USE: 1
           run: |
             docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results || true
 

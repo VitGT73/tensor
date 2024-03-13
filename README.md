@@ -71,75 +71,107 @@ pytest --browser=chrome -sv --alluredir=allure-results
 ```bash
 pytest --browser=firefox -sv --alluredir=allure-results
 ```
-2. Чтобы сохранялась история, перед генерацией отчета, необходимо в папку с результатами прогона скопировать историю
+2. Чтобы сохранялась история, перед генерацией отчета, необходимо в папку с результатами прогона скопировать историю из раннее сгенерированного отчета:
 ```bash
 cp -R ./allure-report/history/ ./allure-results/history
 ```
-3. Генерация готового отчета выполняется командой:
+1. Генерация готового отчета выполняется командой:
 ```bash
 allure generate --clean
 ```
-4. Сгенерированный отчет будет находиться в папке `allure-report` в файле `index.html`
+1. Сгенерированный отчет будет находиться в папке `allure-report` в файле `index.html`
 
 
 
 ### Запуск тестов через Docker-compose
 
+* Команда `docker compose`(раздельно) используется в новых версиях Докера, в старых, необходимо использовать `docker-compose`(через дефис)
+
 Запуск docker-compose с условием его завершения одновременно с сервисом `pytest`
 ```bash
-docker compose up --exit-code-from pytest
+docker compose -f docs/docker-compose-hub-pytest.yml up --exit-code-from pytest
 ```
+Будут выполнены тесты использующие сетку Selenium GRID и сформирован Аллюр-отчет в директории проекта.
 
-##### Другие варианты запуска
 
-Запускаем тесты локально, но браузеры запускаются в Grid сетке.
+### Другие варианты запуска docker-compose
 
-Запуск docker-compose из другой папки и с другим именем:
+##### Запуск docker-compose для Selenium GRID:
+
 ```bash
-docker compose -f docs/docker-compose-hub.yml up --detach
+docker compose -f docker-compose-hub.yml up --detach
 ```
-или только один контейнер, только для Chrome
-``` bash
-docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
-```
-**ВАЖНО:** в этом варианте запуска тестов необходимо подправить conftest.py в секции для браузера Chrome:
+Обратится к браузеру в Selenium GRID можно по адресу `http://selenium-hub:4444/wd/hub`, например:
+
 ```python
 driver = webdriver.Remote(
     command_executor="http://selenium-hub:4444/wd/hub", options=chrome_options
 )
 ```
-необходимо в URL изменить `selenium-hub` на `localhost`
+Остановка контейнеров:
+```bash
+docker compose -f docker-compose-hub.yml down
+```
 
-### Запуск в GitHub action
+### Запуск контейнера с предустановленными Python, Pytest и Allure:
 
+```bash
+docker compose -f docker-compose-pytest.yml up --detach
+```
+Данный контейнер не содержит браузеров FireFox или Chrome поэтому для выполнения тестов нужен запущенный
+`docker-compose-hub.yml`.
 
-trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&
-
-docker compose -f docker-compose-pytest.yml up -d
-docker compose -f docker-compose-hub.yml up -d
+Выполнить тесты внутри запущенного контейнера для браузера Chrome можно командой:
+```bash
 docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results
+```
+Также доступны другие команды описанные выше:
+
+Копирование истории:
+```bash
 docker compose -f docker-compose-pytest.yml exec pytest cp -R ./allure-report/history/ ./allure-results/history
+```
+Генерация отчета. Итоговый проект будет сформирован в папке проекта.
+```bash
 docker compose -f docker-compose-pytest.yml exec pytest allure generate --clean
-
+```
+Контейнеры докер по умолчанию выполняют все команды от имени root, в том числе создают папки с отчетами от его имени. Сбросить права root на эти папки можно следующей командой, которую также можем выполнить из Doker:
+```bash
 docker compose -f docker-compose-pytest.yml exec pytest /bin/sh -c 'chmod -R 777 allure-results allure-report'
+```
+* Умышленно не стал изменять В Докере пользователя root на обычного, потому что в противном случае будет не хватать прав при работе в github actions
 
-docker compose -f docker-compose-pytest.yml /bin/sh -c 'chmod -R 777 allure-results allure-report downloads'
-      /bin/sh -c "trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&
-      ls -la &&
-      pytest --browser=chrome -sv --alluredir=allure-results &&
-      cp -R ./allure-report/history/ ./allure-results/history &&
-      allure generate --clean &&
-      pytest --browser=firefox -sv --alluredir=allure-results &&
-      cp -R ./allure-report/history/ ./allure-results/history &&
-      allure generate --clean"
+Остановить контейнер
+```bash
+docker compose -f docker-compose-pytest.yml down
+```
 
-        - name: Checkout (copy) gh-pages repository to GitHub runner
-          uses: actions/checkout@v3
-          with:
-            ref: gh-pages
-            path: ./.github/gh-pages
+### Запуcк в Github actions
 
-        - name: Copy history from gh-pages to allure-results
-          run: |
-            cp -R ./.github/gh-pages/history/* allure-results/history/
+На сайте Github выполняем следующие действия:
+- Создаем ветку(branch) - `gh-pages`. Проверяем что по адресу `https://vitgt73.github.io/tensor/` открывается README.md репозитория.
+- Генерируем новый токен - [тут](https://github.com/settings/tokens)
+- В репозитории, выбираем Settings => Secrets and variables => Actions. Создаем новый секрет GHP_TOKEN (имя можно выбрать любое) и в его значение копируем только, что сгенерированный Токен. Сюда же будем добавлять Логин и Пароль при необходимости.
 
+В локальной папке создаем папку `./.github/workflow`, в ней новый файл - `config.yml`
+Ключевые моменты:
+Для копирования файлов из ветки `gh-pages` используем скрипт:
+```yml
+  - name: Checkout (copy) gh-pages repository to GitHub runner
+    uses: actions/checkout@v3
+    with:
+      ref: gh-pages
+      path: ./.github/gh-pages
+```
+Для копирования папки с отчетами `allure-report` в ветку `gh-pages` используем скрипт, в нем мы используем сгенерированный раннее токен `secrets.GHP_TOKEN`:
+```yml
+    - name: Deploy to Github Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        token: ${{ secrets.GHP_TOKEN }}
+        branch: gh-pages
+        folder: allure-report
+        clean: true
+```
+
+Запуск настроен по [кнопке](https://github.com/VitGT73/tensor/actions/workflows/config.yml)
