@@ -2,13 +2,22 @@
   "88684a98bb28e589fd77f4810ecf80ed" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "dfc19a3b31e7f77b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1710329842419,
+        "stop" : 1710329859903,
+        "duration" : 17484
+      }
+    }, {
       "uid" : "fcbf9b618fdeb01d",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -60,11 +69,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "f6430022693a7297",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710329860219,
+        "stop" : 1710329871848,
+        "duration" : 11629
+      }
+    }, {
       "uid" : "7c24e4a776d557e3",
       "status" : "passed",
       "time" : {
@@ -111,11 +128,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "81c447cc155b4c6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710329829200,
+        "stop" : 1710329842114,
+        "duration" : 12914
+      }
+    }, {
       "uid" : "7cf7c4cc7b2a115",
       "status" : "passed",
       "time" : {
