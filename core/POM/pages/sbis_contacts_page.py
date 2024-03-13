@@ -17,7 +17,7 @@ class SbisContactsPage(BasePage):
         self.footer = SbisFooter(driver)
         self.PAGE_URL = Links.SBIS_CONTACTS_PAGE
         self.TENSOR_BANNER = (By.XPATH, "(//a[@title='tensor.ru']//img)[1]")
-        self.CHECKED_REGION = (By.XPATH,"//div[div[h2[text()='Контакты']]]//span/span")
+        self.CHECKED_REGION = (By.XPATH, "//div[div[h2[text()='Контакты']]]//span/span")
         # self.CHECKED_REGION = (
         #     By.XPATH,
         #     "//div[div[h2[text()='Контакты']]]//span[@class='sbis_ru-Region-Chooser__text sbis_ru-link']",
@@ -42,6 +42,7 @@ class SbisContactsPage(BasePage):
 
     def this_region_is_checked(self, region: str):
         with allure.step(f"Region '{region}' is checked"):
+
             self.wait.until(
                 EC.text_to_be_present_in_element(self.CHECKED_REGION, region)
             )
