@@ -4,39 +4,39 @@
     "name" : "tests.UI_tests.tensor_test",
     "children" : [ {
       "name" : "test_first_scenario",
-      "uid" : "60e185f18fb9ec75",
+      "uid" : "a8308146ea1c1245",
       "parentUid" : "ff49669227a3bce84b6fb59d6b91e688",
       "status" : "passed",
       "time" : {
-        "start" : 1710349947444,
-        "stop" : 1710349960369,
-        "duration" : 12925
+        "start" : 1710350112407,
+        "stop" : 1710350132170,
+        "duration" : 19763
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_second_scenario",
-      "uid" : "c529fb7bfdf0c505",
+      "uid" : "3329343b86a55da1",
       "parentUid" : "ff49669227a3bce84b6fb59d6b91e688",
       "status" : "broken",
       "time" : {
-        "start" : 1710349960674,
-        "stop" : 1710349976997,
-        "duration" : 16323
+        "start" : 1710350132470,
+        "stop" : 1710350148849,
+        "duration" : 16379
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "test_third_scenario",
-      "uid" : "237511b62b97edfa",
+      "uid" : "a6575c3a1dca5090",
       "parentUid" : "ff49669227a3bce84b6fb59d6b91e688",
       "status" : "passed",
       "time" : {
-        "start" : 1710349978460,
-        "stop" : 1710349989261,
-        "duration" : 10801
+        "start" : 1710350150297,
+        "stop" : 1710350160901,
+        "duration" : 10604
       },
       "flaky" : false,
       "newFailed" : false,
