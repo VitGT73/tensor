@@ -2,13 +2,22 @@
   "88684a98bb28e589fd77f4810ecf80ed" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 7,
+      "broken" : 8,
       "skipped" : 0,
       "passed" : 24,
       "unknown" : 0,
-      "total" : 31
+      "total" : 32
     },
     "items" : [ {
+      "uid" : "c529fb7bfdf0c505",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1710349960674,
+        "stop" : 1710349976997,
+        "duration" : 16323
+      }
+    }, {
       "uid" : "2ebd984681d79ecb",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -164,14 +173,6 @@
         "stop" : 1710245309630,
         "duration" : 5696
       }
-    }, {
-      "uid" : "f36c8fd60cb5ff55",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710245061565,
-        "stop" : 1710245066287,
-        "duration" : 4722
-      }
     } ]
   },
   "f0a889dc4acb2eda17a70e7e90de8b77" : {
@@ -179,11 +180,19 @@
       "failed" : 0,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 28,
+      "passed" : 29,
       "unknown" : 0,
-      "total" : 31
+      "total" : 32
     },
     "items" : [ {
+      "uid" : "237511b62b97edfa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710349978460,
+        "stop" : 1710349989261,
+        "duration" : 10801
+      }
+    }, {
       "uid" : "f7bc0048db97fd16",
       "status" : "passed",
       "time" : {
@@ -335,14 +344,6 @@
         "stop" : 1710245317073,
         "duration" : 6732
       }
-    }, {
-      "uid" : "b4a0548429d7b613",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710245069069,
-        "stop" : 1710245075416,
-        "duration" : 6347
-      }
     } ]
   },
   "0d3472aee69ab5c8a4e8dc2f3bce6cfd" : {
@@ -350,11 +351,19 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 25,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 31
+      "total" : 32
     },
     "items" : [ {
+      "uid" : "60e185f18fb9ec75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710349947444,
+        "stop" : 1710349960369,
+        "duration" : 12925
+      }
+    }, {
       "uid" : "12096c940d1a3678",
       "status" : "passed",
       "time" : {
@@ -508,15 +517,6 @@
         "start" : 1710245298166,
         "stop" : 1710245303067,
         "duration" : 4901
-      }
-    }, {
-      "uid" : "bea4c97bba5ab2c9",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
-      "time" : {
-        "start" : 1710245051747,
-        "stop" : 1710245057953,
-        "duration" : 6206
       }
     } ]
   }
