@@ -38,7 +38,6 @@ class TestTensorSuite(BaseTest):
         self.sbis_home_page.is_opened()
         self.sbis_home_page.click_to_contacts_link()
         self.sbis_contacts_page.is_opened()
-        print("CI = ", settings.CI)
         self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)
         self.sbis_contacts_page.open_regions_list()
         self.sbis_contacts_page.is_region_list_loaded()
