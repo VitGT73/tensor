@@ -1,30 +1,30 @@
 [ {
-  "uid" : "f6430022693a7297",
-  "name" : "test_third_scenario",
-  "time" : {
-    "start" : 1710329860219,
-    "stop" : 1710329871848,
-    "duration" : 11629
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dfc19a3b31e7f77b",
+  "uid" : "ec31ff7030c57bfb",
   "name" : "test_second_scenario",
   "time" : {
-    "start" : 1710329842419,
-    "stop" : 1710329859903,
-    "duration" : 17484
+    "start" : 1710330421211,
+    "stop" : 1710330437392,
+    "duration" : 16181
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "81c447cc155b4c6f",
+  "uid" : "621a549af5ccd6d8",
   "name" : "test_first_scenario",
   "time" : {
-    "start" : 1710329829200,
-    "stop" : 1710329842114,
-    "duration" : 12914
+    "start" : 1710330408701,
+    "stop" : 1710330420889,
+    "duration" : 12188
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "689bcc62d9a5fa3c",
+  "name" : "test_third_scenario",
+  "time" : {
+    "start" : 1710330437700,
+    "stop" : 1710330449059,
+    "duration" : 11359
   },
   "status" : "passed",
   "severity" : "normal"
