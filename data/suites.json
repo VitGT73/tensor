@@ -1,0 +1,56 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests.UI_tests",
+    "children" : [ {
+      "name" : "tensor_test",
+      "children" : [ {
+        "name" : "TestTensorSuite",
+        "children" : [ {
+          "name" : "test_first_scenario",
+          "uid" : "4726beb058c3a624",
+          "parentUid" : "01c09bdbac9204c9a6b335064ae67e2d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1710322226076,
+            "stop" : 1710322242401,
+            "duration" : 16325
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_second_scenario",
+          "uid" : "eabc10961a0f9245",
+          "parentUid" : "01c09bdbac9204c9a6b335064ae67e2d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1710322242701,
+            "stop" : 1710322259093,
+            "duration" : 16392
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_third_scenario",
+          "uid" : "437bf7c9e5664529",
+          "parentUid" : "01c09bdbac9204c9a6b335064ae67e2d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1710322259406,
+            "stop" : 1710322270056,
+            "duration" : 10650
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "01c09bdbac9204c9a6b335064ae67e2d"
+      } ],
+      "uid" : "7e90b2bfb3193a4ba96c89bcc1a1a394"
+    } ],
+    "uid" : "b92f70576e8d70460cdab60ddb2d6ca6"
+  } ],
+  "name" : "suites"
+}

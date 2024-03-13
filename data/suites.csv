@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 13 09:30:26 GMT 2024","Wed Mar 13 09:30:42 GMT 2024","16325","tests.UI_tests","tensor_test","TestTensorSuite","","","test_first_scenario","Сравнение размеров картинок в блоке 'Работаем'"
+"broken","Wed Mar 13 09:30:42 GMT 2024","Wed Mar 13 09:30:59 GMT 2024","16392","tests.UI_tests","tensor_test","TestTensorSuite","","","test_second_scenario","Изменение региона на 'Камчатский край'"
+"passed","Wed Mar 13 09:30:59 GMT 2024","Wed Mar 13 09:31:10 GMT 2024","10650","tests.UI_tests","tensor_test","TestTensorSuite","","","test_third_scenario","Загрузка Sbis-plugin для Windows"
