@@ -4,7 +4,7 @@ import allure
 # from selenium.webdriver.common.by import By
 # from selenium.webdriver.support.wait import WebDriverWait
 from core.config.settings import settings
-from tests.UI_tests.base_test import BaseTest
+from core.helpers.base_test import BaseTest
 
 @allure.title("Тестовое задание от компании Тензор")
 class TestTensorSuite(BaseTest):

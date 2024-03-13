@@ -17,10 +17,11 @@ class SbisContactsPage(BasePage):
         self.footer = SbisFooter(driver)
         self.PAGE_URL = Links.SBIS_CONTACTS_PAGE
         self.TENSOR_BANNER = (By.XPATH, "(//a[@title='tensor.ru']//img)[1]")
-        self.CHECKED_REGION = (
-            By.XPATH,
-            "//div[div[h2[text()='Контакты']]]//span[@class='sbis_ru-Region-Chooser__text sbis_ru-link']",
-        )
+        self.CHECKED_REGION = (By.XPATH,"//div[div[h2[text()='Контакты']]]//span/span")
+        # self.CHECKED_REGION = (
+        #     By.XPATH,
+        #     "//div[div[h2[text()='Контакты']]]//span[@class='sbis_ru-Region-Chooser__text sbis_ru-link']",
+        # )
         self.CHOICE_REGION = (By.XPATH, "//h5[text()='Выберите свой регион']")
         self.CHOICE_REGION_RENDERED = (
             By.XPATH,
