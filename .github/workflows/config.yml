@@ -10,6 +10,12 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v3
 
+        - name: Checkout (copy) gh-pages repository to GitHub runner
+          uses: actions/checkout@v3
+          with:
+            ref: gh-pages
+            path: ./.github/gh-pages
+
         - name: Run selenium-hub via docker-compose
           run: docker-compose -f docker-compose-hub.yml up -d
 
@@ -22,6 +28,10 @@ jobs:
           run: |
             docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results || true
 
+        - name: Copy history from gh-pages to allure-results before run Allure-generate
+          run: |
+            cp -R ./.github/gh-pages/history/* allure-results/history/
+
         - name: Generate Allure report to allure-report
           run: docker compose -f docker-compose-pytest.yml exec pytest allure generate --clean
 
@@ -32,3 +42,9 @@ jobs:
             branch: gh-pages
             folder: allure-report
             clean: true
+
+
+
+          - name: Copy history from gh-pages to allure-results
+            run: |
+              cp -R ./.github/gh-pages/history/* allure-results/history/
