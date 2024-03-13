@@ -1,12 +1,12 @@
 {
-  "uid" : "621a549af5ccd6d8",
+  "uid" : "bb3881b6d34ff396",
   "name" : "test_first_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_first_scenario",
   "historyId" : "0d3472aee69ab5c8a4e8dc2f3bce6cfd",
   "time" : {
-    "start" : 1710330408701,
-    "stop" : 1710330420889,
-    "duration" : 12188
+    "start" : 1710331112301,
+    "stop" : 1710331127710,
+    "duration" : 15409
   },
   "description" : "Сравнение размеров картинок в блоке 'Работаем'",
   "descriptionHtml" : "<p>Сравнение размеров картинок в блоке 'Работаем'</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1710330408154,
-      "stop" : 1710330408700,
-      "duration" : 546
+      "start" : 1710331111717,
+      "stop" : 1710331112300,
+      "duration" : 583
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,8 +31,8 @@
   }, {
     "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710330408154,
-      "stop" : 1710330408154,
+      "start" : 1710331111716,
+      "stop" : 1710331111716,
       "duration" : 0
     },
     "status" : "passed",
@@ -46,9 +46,9 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1710330408700,
-      "stop" : 1710330408701,
-      "duration" : 1
+      "start" : 1710331112300,
+      "stop" : 1710331112300,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -65,9 +65,9 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710330408701,
-        "stop" : 1710330413472,
-        "duration" : 4771
+        "start" : 1710331112301,
+        "stop" : 1710331118444,
+        "duration" : 6143
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710330413472,
-        "stop" : 1710330413507,
-        "duration" : 35
+        "start" : 1710331118444,
+        "stop" : 1710331118466,
+        "duration" : 22
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,9 +95,9 @@
     }, {
       "name" : "Click on 'Контакты' link",
       "time" : {
-        "start" : 1710330413507,
-        "stop" : 1710330415329,
-        "duration" : 1822
+        "start" : 1710331118466,
+        "stop" : 1710331121022,
+        "duration" : 2556
       },
       "status" : "passed",
       "steps" : [ ],
@@ -110,9 +110,9 @@
     }, {
       "name" : "Page https://sbis.ru/contacts is opened",
       "time" : {
-        "start" : 1710330415329,
-        "stop" : 1710330416432,
-        "duration" : 1103
+        "start" : 1710331121022,
+        "stop" : 1710331122123,
+        "duration" : 1101
       },
       "status" : "passed",
       "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "Click to Tensor banner",
       "time" : {
-        "start" : 1710330416440,
-        "stop" : 1710330416555,
-        "duration" : 115
+        "start" : 1710331122131,
+        "stop" : 1710331122228,
+        "duration" : 97
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,9 +140,9 @@
     }, {
       "name" : "Switch to https://tensor.ru page",
       "time" : {
-        "start" : 1710330416555,
-        "stop" : 1710330417506,
-        "duration" : 951
+        "start" : 1710331122229,
+        "stop" : 1710331123398,
+        "duration" : 1169
       },
       "status" : "passed",
       "steps" : [ ],
@@ -155,9 +155,9 @@
     }, {
       "name" : "Page https://tensor.ru is opened",
       "time" : {
-        "start" : 1710330417515,
-        "stop" : 1710330419547,
-        "duration" : 2032
+        "start" : 1710331123404,
+        "stop" : 1710331126123,
+        "duration" : 2719
       },
       "status" : "passed",
       "steps" : [ ],
@@ -170,8 +170,8 @@
     }, {
       "name" : "Block 'Сила в людях' is present",
       "time" : {
-        "start" : 1710330419547,
-        "stop" : 1710330419568,
+        "start" : 1710331126123,
+        "stop" : 1710331126144,
         "duration" : 21
       },
       "status" : "passed",
@@ -185,9 +185,9 @@
     }, {
       "name" : "Link 'Подробнее' is present",
       "time" : {
-        "start" : 1710330419568,
-        "stop" : 1710330419633,
-        "duration" : 65
+        "start" : 1710331126144,
+        "stop" : 1710331126207,
+        "duration" : 63
       },
       "status" : "passed",
       "steps" : [ ],
@@ -200,9 +200,9 @@
     }, {
       "name" : "Click on 'Подробнее' link",
       "time" : {
-        "start" : 1710330419634,
-        "stop" : 1710330420587,
-        "duration" : 953
+        "start" : 1710331126207,
+        "stop" : 1710331127431,
+        "duration" : 1224
       },
       "status" : "passed",
       "steps" : [ ],
@@ -215,9 +215,9 @@
     }, {
       "name" : "Page https://tensor.ru/about is opened",
       "time" : {
-        "start" : 1710330420587,
-        "stop" : 1710330420653,
-        "duration" : 66
+        "start" : 1710331127431,
+        "stop" : 1710331127496,
+        "duration" : 65
       },
       "status" : "passed",
       "steps" : [ ],
@@ -230,8 +230,8 @@
     }, {
       "name" : "Block 'Работаем' is present",
       "time" : {
-        "start" : 1710330420653,
-        "stop" : 1710330420670,
+        "start" : 1710331127496,
+        "stop" : 1710331127513,
         "duration" : 17
       },
       "status" : "passed",
@@ -245,16 +245,16 @@
     }, {
       "name" : "Checking that the images in the block 'Работаем' are the same size",
       "time" : {
-        "start" : 1710330420670,
-        "stop" : 1710330420889,
-        "duration" : 219
+        "start" : 1710331127513,
+        "stop" : 1710331127710,
+        "duration" : 197
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "7b516d1a4cc8c416",
+        "uid" : "94a9769e16ddf673",
         "name" : "All images are the same size: 272 x 193",
-        "source" : "7b516d1a4cc8c416.txt",
+        "source" : "94a9769e16ddf673.txt",
         "type" : "text/plain",
         "size" : 7
       } ],
@@ -274,9 +274,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710330420891,
-      "stop" : 1710330421024,
-      "duration" : 133
+      "start" : 1710331127711,
+      "stop" : 1710331127833,
+      "duration" : 122
     },
     "status" : "passed",
     "steps" : [ ],
@@ -298,7 +298,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "ee131704e747"
+    "value" : "c1913a2fcf43"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -328,11 +328,19 @@
         "failed" : 0,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 7,
+        "passed" : 8,
         "unknown" : 0,
-        "total" : 7
+        "total" : 8
       },
       "items" : [ {
+        "uid" : "621a549af5ccd6d8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710330408701,
+          "stop" : 1710330420889,
+          "duration" : 12188
+        }
+      }, {
         "uid" : "81c447cc155b4c6f",
         "status" : "passed",
         "time" : {
@@ -384,6 +392,6 @@
     },
     "tags" : [ ]
   },
-  "source" : "621a549af5ccd6d8.json",
+  "source" : "bb3881b6d34ff396.json",
   "parameterValues" : [ ]
 }
