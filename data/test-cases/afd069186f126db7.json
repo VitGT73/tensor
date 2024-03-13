@@ -1,0 +1,407 @@
+{
+  "uid" : "afd069186f126db7",
+  "name" : "test_third_scenario",
+  "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_third_scenario",
+  "historyId" : "f0a889dc4acb2eda17a70e7e90de8b77",
+  "time" : {
+    "start" : 1710338693448,
+    "stop" : 1710338708774,
+    "duration" : 15326
+  },
+  "description" : "Загрузка Sbis-plugin для Windows",
+  "descriptionHtml" : "<p>Загрузка Sbis-plugin для Windows</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "remove_download_directory",
+    "time" : {
+      "start" : 1710338658929,
+      "stop" : 1710338658929,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1710338693447,
+      "stop" : 1710338693447,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1710338693269,
+      "stop" : 1710338693447,
+      "duration" : 178
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Загрузка Sbis-plugin для Windows",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://sbis.ru page",
+      "time" : {
+        "start" : 1710338693448,
+        "stop" : 1710338697464,
+        "duration" : 4016
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Open Sbis Download page",
+      "time" : {
+        "start" : 1710338697464,
+        "stop" : 1710338703867,
+        "duration" : 6403
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://sbis.ru/download is opened",
+      "time" : {
+        "start" : 1710338703867,
+        "stop" : 1710338703916,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'СБИС Плагин' link",
+      "time" : {
+        "start" : 1710338703916,
+        "stop" : 1710338705580,
+        "duration" : 1664
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Section Plugin is opened",
+      "time" : {
+        "start" : 1710338705580,
+        "stop" : 1710338705588,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Download web-installer",
+      "time" : {
+        "start" : 1710338705588,
+        "stop" : 1710338708774,
+        "duration" : 3186
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check size Web-installer file",
+      "time" : {
+        "start" : 1710338708774,
+        "stop" : 1710338708774,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1710338708775,
+      "stop" : 1710338708872,
+      "duration" : 97
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.UI_tests"
+  }, {
+    "name" : "suite",
+    "value" : "tensor_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTensorSuite"
+  }, {
+    "name" : "host",
+    "value" : "15829065d7d2"
+  }, {
+    "name" : "thread",
+    "value" : "7-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.UI_tests.tensor_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 26,
+        "unknown" : 0,
+        "total" : 29
+      },
+      "items" : [ {
+        "uid" : "31caf66ba764ea19",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710335471330,
+          "stop" : 1710335477239,
+          "duration" : 5909
+        }
+      }, {
+        "uid" : "69775e4844d28303",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710335384062,
+          "stop" : 1710335389844,
+          "duration" : 5782
+        }
+      }, {
+        "uid" : "ee9c762b9c2bd592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710334131869,
+          "stop" : 1710334137877,
+          "duration" : 6008
+        }
+      }, {
+        "uid" : "479ac992cefc6519",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710333622450,
+          "stop" : 1710333628800,
+          "duration" : 6350
+        }
+      }, {
+        "uid" : "c63840a2351d5de5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710333295887,
+          "stop" : 1710333301269,
+          "duration" : 5382
+        }
+      }, {
+        "uid" : "61f94a43a5c93876",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710324580261,
+          "stop" : 1710324586312,
+          "duration" : 6051
+        }
+      }, {
+        "uid" : "91fd79786d26f6d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710320962187,
+          "stop" : 1710320967887,
+          "duration" : 5700
+        }
+      }, {
+        "uid" : "5109dc909cf8d96f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710320808948,
+          "stop" : 1710320816839,
+          "duration" : 7891
+        }
+      }, {
+        "uid" : "7cbf3c257b1227f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710315692636,
+          "stop" : 1710315697774,
+          "duration" : 5138
+        }
+      }, {
+        "uid" : "d2c0df2202b0655d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710306729164,
+          "stop" : 1710306735647,
+          "duration" : 6483
+        }
+      }, {
+        "uid" : "f2ea5e15a371a354",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710248171964,
+          "stop" : 1710248179025,
+          "duration" : 7061
+        }
+      }, {
+        "uid" : "33001d6bf4667e98",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710247040126,
+          "stop" : 1710247046766,
+          "duration" : 6640
+        }
+      }, {
+        "uid" : "e29299da8ad6ec05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710245934743,
+          "stop" : 1710245941647,
+          "duration" : 6904
+        }
+      }, {
+        "uid" : "9a529b8c9b45a5de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710245909925,
+          "stop" : 1710245916159,
+          "duration" : 6234
+        }
+      }, {
+        "uid" : "88449b0485fd8ea5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710245431272,
+          "stop" : 1710245437319,
+          "duration" : 6047
+        }
+      }, {
+        "uid" : "8530047e5806a464",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710245310341,
+          "stop" : 1710245317073,
+          "duration" : 6732
+        }
+      }, {
+        "uid" : "b4a0548429d7b613",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710245069069,
+          "stop" : 1710245075416,
+          "duration" : 6347
+        }
+      }, {
+        "uid" : "ac74aa54f3b3bf7a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
+        "time" : {
+          "start" : 1710244860611,
+          "stop" : 1710244867358,
+          "duration" : 6747
+        }
+      }, {
+        "uid" : "f144626a2fd73a00",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
+        "time" : {
+          "start" : 1710244668984,
+          "stop" : 1710244672701,
+          "duration" : 3717
+        }
+      }, {
+        "uid" : "7fcf2b3a6dcb0ff2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710244459524,
+          "stop" : 1710244466521,
+          "duration" : 6997
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "afd069186f126db7.json",
+  "parameterValues" : [ ]
+}
