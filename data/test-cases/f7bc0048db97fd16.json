@@ -1,12 +1,12 @@
 {
-  "uid" : "878c000e08c34e02",
+  "uid" : "f7bc0048db97fd16",
   "name" : "test_third_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_third_scenario",
   "historyId" : "f0a889dc4acb2eda17a70e7e90de8b77",
   "time" : {
-    "start" : 1710348049893,
-    "stop" : 1710348061028,
-    "duration" : 11135
+    "start" : 1710349204724,
+    "stop" : 1710349216526,
+    "duration" : 11802
   },
   "description" : "Загрузка Sbis-plugin для Windows",
   "descriptionHtml" : "<p>Загрузка Sbis-plugin для Windows</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1710348049892,
-      "stop" : 1710348049892,
-      "duration" : 0
+      "start" : 1710349204723,
+      "stop" : 1710349204724,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,9 +31,9 @@
   }, {
     "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710348016739,
-      "stop" : 1710348016739,
-      "duration" : 0
+      "start" : 1710349173292,
+      "stop" : 1710349173293,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -46,9 +46,9 @@
   }, {
     "name" : "driver",
     "time" : {
-      "start" : 1710348049674,
-      "stop" : 1710348049892,
-      "duration" : 218
+      "start" : 1710349204540,
+      "stop" : 1710349204723,
+      "duration" : 183
     },
     "status" : "passed",
     "steps" : [ ],
@@ -65,9 +65,9 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710348049893,
-        "stop" : 1710348053313,
-        "duration" : 3420
+        "start" : 1710349204724,
+        "stop" : 1710349208124,
+        "duration" : 3400
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "Open Sbis Download page",
       "time" : {
-        "start" : 1710348053314,
-        "stop" : 1710348056641,
-        "duration" : 3327
+        "start" : 1710349208124,
+        "stop" : 1710349211320,
+        "duration" : 3196
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,9 +95,9 @@
     }, {
       "name" : "Page https://sbis.ru/download is opened",
       "time" : {
-        "start" : 1710348056641,
-        "stop" : 1710348056706,
-        "duration" : 65
+        "start" : 1710349211320,
+        "stop" : 1710349211374,
+        "duration" : 54
       },
       "status" : "passed",
       "steps" : [ ],
@@ -110,9 +110,9 @@
     }, {
       "name" : "Click on 'СБИС Плагин' link",
       "time" : {
-        "start" : 1710348056706,
-        "stop" : 1710348058265,
-        "duration" : 1559
+        "start" : 1710349211374,
+        "stop" : 1710349212788,
+        "duration" : 1414
       },
       "status" : "passed",
       "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "Section Plugin is opened",
       "time" : {
-        "start" : 1710348058266,
-        "stop" : 1710348058281,
-        "duration" : 15
+        "start" : 1710349212788,
+        "stop" : 1710349212798,
+        "duration" : 10
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,9 +140,9 @@
     }, {
       "name" : "Download web-installer",
       "time" : {
-        "start" : 1710348058281,
-        "stop" : 1710348061028,
-        "duration" : 2747
+        "start" : 1710349212798,
+        "stop" : 1710349216526,
+        "duration" : 3728
       },
       "status" : "passed",
       "steps" : [ ],
@@ -155,8 +155,8 @@
     }, {
       "name" : "Check size Web-installer file",
       "time" : {
-        "start" : 1710348061028,
-        "stop" : 1710348061028,
+        "start" : 1710349216526,
+        "stop" : 1710349216526,
         "duration" : 0
       },
       "status" : "passed",
@@ -178,9 +178,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710348061029,
-      "stop" : 1710348061128,
-      "duration" : 99
+      "start" : 1710349216527,
+      "stop" : 1710349216624,
+      "duration" : 97
     },
     "status" : "passed",
     "steps" : [ ],
@@ -202,7 +202,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "fe545962fa30"
+    "value" : "6359cbf65cc7"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -232,11 +232,19 @@
         "failed" : 0,
         "broken" : 3,
         "skipped" : 0,
-        "passed" : 27,
+        "passed" : 28,
         "unknown" : 0,
-        "total" : 30
+        "total" : 31
       },
       "items" : [ {
+        "uid" : "878c000e08c34e02",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710348049893,
+          "stop" : 1710348061028,
+          "duration" : 11135
+        }
+      }, {
         "uid" : "afd069186f126db7",
         "status" : "passed",
         "time" : {
@@ -389,19 +397,10 @@
           "stop" : 1710244867358,
           "duration" : 6747
         }
-      }, {
-        "uid" : "f144626a2fd73a00",
-        "status" : "broken",
-        "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: Dismissed user prompt dialog: При загрузке страницы не все ресурсы были загружены. Страница может работать некорректно. Перезагрузить страницу?\nStacktrace:\nRemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:191:5\nUnexpectedAlertOpenError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:768:5\nGeckoDriver.prototype._handleUserPrompts@chrome://remote/content/marionette/driver.sys.mjs:2809:13",
-        "time" : {
-          "start" : 1710244668984,
-          "stop" : 1710244672701,
-          "duration" : 3717
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "878c000e08c34e02.json",
+  "source" : "f7bc0048db97fd16.json",
   "parameterValues" : [ ]
 }
