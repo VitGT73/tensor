@@ -42,7 +42,7 @@ def pytest_addoption(parser):
 @pytest.fixture()
 def driver(request):
     browser = request.config.getoption("--browser")
-    print("CI = ", settings.CI)
+    print("\nCI =", settings.CI)
     print(f"\nSetting up: {browser} driver")
     if browser == "firefox":
         firefox_options = FirefoxOptions()

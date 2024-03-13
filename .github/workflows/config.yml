@@ -20,9 +20,9 @@ jobs:
           run: docker-compose -f docker-compose-hub.yml up -d
 
         - name: Run Dockerfile with Python
+          run: docker-compose -f docker-compose-pytest.yml up -d
           env:
             CI: 1
-          run: docker-compose -f docker-compose-pytest.yml up -d
 
         - name: Run UI-tests
           run: |

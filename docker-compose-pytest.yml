@@ -6,9 +6,11 @@ services:
       context: .
       dockerfile: Dockerfile
 
-    working_dir: /usr/workspace
     environment:
+      - CI=${CI:-0}
       - SELENIUM_GRID_USE=1
+
+    working_dir: /usr/workspace
     volumes:
       - ./tests/:/usr/workspace/tests/
       - ./core/:/usr/workspace/core/
