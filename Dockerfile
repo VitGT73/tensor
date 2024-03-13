@@ -26,8 +26,6 @@ COPY ./requirements.txt /usr/workspace/
 
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
-# Create a directory for allure-results and set permissions
-RUN mkdir /usr/workspace/allure-results && chown -R 1000:1000 /usr/workspace/allure-results
-# CMD ["pytest"]
+CMD ["sh"]

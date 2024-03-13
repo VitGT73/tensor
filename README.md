@@ -114,3 +114,32 @@ driver = webdriver.Remote(
 
 
 trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&
+
+docker compose -f docker-compose-pytest.yml up -d
+docker compose -f docker-compose-hub.yml up -d
+docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results
+docker compose -f docker-compose-pytest.yml exec pytest cp -R ./allure-report/history/ ./allure-results/history
+docker compose -f docker-compose-pytest.yml exec pytest allure generate --clean
+
+docker compose -f docker-compose-pytest.yml exec pytest /bin/sh -c 'chmod -R 777 allure-results allure-report'
+
+docker compose -f docker-compose-pytest.yml /bin/sh -c 'chmod -R 777 allure-results allure-report downloads'
+      /bin/sh -c "trap 'chmod -R 777 allure-results allure-report downloads .pytest_cache' EXIT &&
+      ls -la &&
+      pytest --browser=chrome -sv --alluredir=allure-results &&
+      cp -R ./allure-report/history/ ./allure-results/history &&
+      allure generate --clean &&
+      pytest --browser=firefox -sv --alluredir=allure-results &&
+      cp -R ./allure-report/history/ ./allure-results/history &&
+      allure generate --clean"
+
+        - name: Checkout (copy) gh-pages repository to GitHub runner
+          uses: actions/checkout@v3
+          with:
+            ref: gh-pages
+            path: ./.github/gh-pages
+
+        - name: Copy history from gh-pages to allure-results
+          run: |
+            cp -R ./.github/gh-pages/history/* allure-results/history/
+

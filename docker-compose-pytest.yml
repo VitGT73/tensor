@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  pytest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    working_dir: /usr/workspace
+    environment:
+      - SELENIUM_GRID_USE=1
+    volumes:
+      - ./tests/:/usr/workspace/tests/
+      - ./core/:/usr/workspace/core/
+      - ./allure-report/:/usr/workspace/allure-report/
+      - ./allure-results/:/usr/workspace/allure-results/
+    stdin_open: true
+    tty: true
+    networks:
+      grid:
+
+networks:
+  grid:
+    driver: bridge

@@ -1,19 +1,31 @@
 name: UI Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  ui-tests:
+  ui-test:
     runs-on: ubuntu-latest
 
     steps:
-        - uses: actions/checkout@v2
+        - name: Checkout repository
+          uses: actions/checkout@v3
 
-        - name: Run UI-tests via docker-compose
+        - name: Run selenium-hub via docker-compose
+          run: docker-compose -f docker-compose-hub.yml up -d
+
+        - name: Run Dockerfile with Python
+          run: docker-compose -f docker-compose-pytest.yml up -d
+
+        - name: Run UI-tests
           env:
             SELENIUM_GRID_USE: 0
-          run:
-            docker compose up --exit-code-from pytest || true
+          run: docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results
+
+        - name: Generate Allure report to allure-report
+          run: docker compose -f docker-compose-pytest.yml exec pytest allure generate --clean
 
         - name: Deploy to Github Pages
           uses: JamesIves/github-pages-deploy-action@4.1.5

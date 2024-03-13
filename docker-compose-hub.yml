@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3'
 
 services:
   selenium-hub:
@@ -39,36 +39,6 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
     networks:
       - grid
-
-  pytest:
-    image: pytest:v1.0
-    build:
-      context: .
-      dockerfile: Dockerfile
-
-    command: >
-      /bin/sh -c "ls -la &&
-      pytest --browser=chrome -sv --alluredir=allure-results &&
-      cp -R ./allure-report/history/ ./allure-results/history &&
-      allure generate --clean &&
-      pytest --browser=firefox -sv --alluredir=allure-results &&
-      cp -R ./allure-report/history/ ./allure-results/history &&
-      ls -la &&
-      allure generate --clean &&
-      ls -la"
-    working_dir: /usr/workspace
-    depends_on:
-      selenium-hub:
-        condition: service_healthy
-    environment:
-      - SELENIUM_GRID_USE=1
-      - LOGIN=${LOGIN}
-      - PASSWORD=${PASSWORD}
-    volumes:
-      - ./:/usr/workspace
-
-    networks:
-      grid:
 
 networks:
   grid:
