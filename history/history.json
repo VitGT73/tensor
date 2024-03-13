@@ -2,13 +2,22 @@
   "88684a98bb28e589fd77f4810ecf80ed" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 8,
+      "broken" : 9,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "d7ac88b76658f1bb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1710334466141,
+        "stop" : 1710334483412,
+        "duration" : 17271
+      }
+    }, {
       "uid" : "a9e1a7b02c82bc39",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -87,11 +96,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "f546f41eb08e1ae8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710334483693,
+        "stop" : 1710334494366,
+        "duration" : 10673
+      }
+    }, {
       "uid" : "741c34a8a4e06e7d",
       "status" : "passed",
       "time" : {
@@ -160,13 +177,22 @@
   "0d3472aee69ab5c8a4e8dc2f3bce6cfd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "4c3539494e4e742b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome-headless-shell=122.0.6261.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x55becd567793 <unknown>\n#1 0x55becd25b1c6 <unknown>\n#2 0x55becd26059c <unknown>\n#3 0x55becd26232b <unknown>\n#4 0x55becd2623cc <unknown>\n#5 0x55becd2a8225 <unknown>\n#6 0x55becd2a74fa <unknown>\n#7 0x55becd29b247 <unknown>\n#8 0x55becd2c83d2 <unknown>\n#9 0x55becd29abd8 <unknown>\n#10 0x55becd2c859e <unknown>\n#11 0x55becd2e6dd9 <unknown>\n#12 0x55becd2c8173 <unknown>\n#13 0x55becd2992d3 <unknown>\n#14 0x55becd299c9e <unknown>\n#15 0x55becd52b8cb <unknown>\n#16 0x55becd52f745 <unknown>\n#17 0x55becd5182e1 <unknown>\n#18 0x55becd5302d2 <unknown>\n#19 0x55becd4fc17f <unknown>\n#20 0x55becd555dc8 <unknown>\n#21 0x55becd555fc3 <unknown>\n#22 0x55becd566944 <unknown>\n#23 0x7fcd75572ac3 <unknown>",
+      "time" : {
+        "start" : 1710334454599,
+        "stop" : 1710334465758,
+        "duration" : 11159
+      }
+    }, {
       "uid" : "bb3881b6d34ff396",
       "status" : "passed",
       "time" : {
