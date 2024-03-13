@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 11,
       "skipped" : 0,
-      "passed" : 24,
+      "passed" : 25,
       "unknown" : 0,
-      "total" : 35
+      "total" : 36
     },
     "items" : [ {
+      "uid" : "2af6f7654f1d4193",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710353901741,
+        "stop" : 1710353910030,
+        "duration" : 8289
+      }
+    }, {
       "uid" : "d4ccd7028d7fbbff",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -168,14 +176,6 @@
         "stop" : 1710247037890,
         "duration" : 3751
       }
-    }, {
-      "uid" : "b68f7a76e25fad7a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710245928659,
-        "stop" : 1710245932418,
-        "duration" : 3759
-      }
     } ]
   },
   "f0a889dc4acb2eda17a70e7e90de8b77" : {
@@ -183,11 +183,19 @@
       "failed" : 0,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 32,
+      "passed" : 33,
       "unknown" : 0,
-      "total" : 35
+      "total" : 36
     },
     "items" : [ {
+      "uid" : "d0587653bc6780fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710353910305,
+        "stop" : 1710353922276,
+        "duration" : 11971
+      }
+    }, {
       "uid" : "3c5b56b26003383f",
       "status" : "passed",
       "time" : {
@@ -339,26 +347,27 @@
         "stop" : 1710247046766,
         "duration" : 6640
       }
-    }, {
-      "uid" : "e29299da8ad6ec05",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710245934743,
-        "stop" : 1710245941647,
-        "duration" : 6904
-      }
     } ]
   },
   "0d3472aee69ab5c8a4e8dc2f3bce6cfd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 7,
+      "broken" : 8,
       "skipped" : 0,
       "passed" : 28,
       "unknown" : 0,
-      "total" : 35
+      "total" : 36
     },
     "items" : [ {
+      "uid" : "606a5f351b74568f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome-headless-shell=122.0.6261.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x5cdfa8c30793 <unknown>\n#1 0x5cdfa89241c6 <unknown>\n#2 0x5cdfa892959c <unknown>\n#3 0x5cdfa892b5f2 <unknown>\n#4 0x5cdfa89b0de8 <unknown>\n#5 0x5cdfa89913d2 <unknown>\n#6 0x5cdfa89afdd9 <unknown>\n#7 0x5cdfa8991173 <unknown>\n#8 0x5cdfa89622d3 <unknown>\n#9 0x5cdfa8962c9e <unknown>\n#10 0x5cdfa8bf48cb <unknown>\n#11 0x5cdfa8bf8745 <unknown>\n#12 0x5cdfa8be12e1 <unknown>\n#13 0x5cdfa8bf92d2 <unknown>\n#14 0x5cdfa8bc517f <unknown>\n#15 0x5cdfa8c1edc8 <unknown>\n#16 0x5cdfa8c1efc3 <unknown>\n#17 0x5cdfa8c2f944 <unknown>\n#18 0x72fcf943bac3 <unknown>",
+      "time" : {
+        "start" : 1710353889258,
+        "stop" : 1710353899909,
+        "duration" : 10651
+      }
+    }, {
       "uid" : "1c1a28ae60283ec1",
       "status" : "passed",
       "time" : {
@@ -512,14 +521,6 @@
         "start" : 1710247023716,
         "stop" : 1710247031920,
         "duration" : 8204
-      }
-    }, {
-      "uid" : "12faf58355c3fbb9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710245920418,
-        "stop" : 1710245926284,
-        "duration" : 5866
       }
     } ]
   }

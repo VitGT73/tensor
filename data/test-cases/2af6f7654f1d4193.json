@@ -1,26 +1,24 @@
 {
-  "uid" : "d4ccd7028d7fbbff",
+  "uid" : "2af6f7654f1d4193",
   "name" : "test_second_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_second_scenario",
   "historyId" : "88684a98bb28e589fd77f4810ecf80ed",
   "time" : {
-    "start" : 1710352682001,
-    "stop" : 1710352701233,
-    "duration" : 19232
+    "start" : 1710353901741,
+    "stop" : 1710353910030,
+    "duration" : 8289
   },
   "description" : "Изменение региона на 'Камчатский край'",
   "descriptionHtml" : "<p>Изменение региона на 'Камчатский край'</p>\n",
-  "status" : "broken",
-  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-  "statusTrace" : "self = <tensor_test.TestTensorSuite object at 0x761d5257b820>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"3fdb09ca0d45c105496781e2c241473a\")>\n\n    @allure.description(\"Изменение региона на 'Камчатский край'\")\n    def test_second_scenario(self, driver):\n        self.sbis_home_page.open()\n        self.sbis_home_page.is_opened()\n        self.sbis_home_page.click_to_contacts_link()\n        self.sbis_contacts_page.is_opened()\n>       self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)\n\ntests/UI_tests/tensor_test.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ncore/POM/pages/sbis_contacts_page.py:45: in this_region_is_checked\n    self.wait.until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"3fdb09ca0d45c105496781e2c241473a\")>\nmethod = <function text_to_be_present_in_element.<locals>._predicate at 0x761d52565b40>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1710352681813,
-      "stop" : 1710352682001,
-      "duration" : 188
+      "start" : 1710353901561,
+      "stop" : 1710353901740,
+      "duration" : 179
     },
     "status" : "passed",
     "steps" : [ ],
@@ -33,8 +31,8 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1710352682001,
-      "stop" : 1710352682001,
+      "start" : 1710353901740,
+      "stop" : 1710353901740,
       "duration" : 0
     },
     "status" : "passed",
@@ -48,8 +46,8 @@
   }, {
     "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710352666187,
-      "stop" : 1710352666187,
+      "start" : 1710353888708,
+      "stop" : 1710353888708,
       "duration" : 0
     },
     "status" : "passed",
@@ -63,15 +61,13 @@
   } ],
   "testStage" : {
     "description" : "Изменение региона на 'Камчатский край'",
-    "status" : "broken",
-    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-    "statusTrace" : "self = <tensor_test.TestTensorSuite object at 0x761d5257b820>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"3fdb09ca0d45c105496781e2c241473a\")>\n\n    @allure.description(\"Изменение региона на 'Камчатский край'\")\n    def test_second_scenario(self, driver):\n        self.sbis_home_page.open()\n        self.sbis_home_page.is_opened()\n        self.sbis_home_page.click_to_contacts_link()\n        self.sbis_contacts_page.is_opened()\n>       self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)\n\ntests/UI_tests/tensor_test.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ncore/POM/pages/sbis_contacts_page.py:45: in this_region_is_checked\n    self.wait.until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"3fdb09ca0d45c105496781e2c241473a\")>\nmethod = <function text_to_be_present_in_element.<locals>._predicate at 0x761d52565b40>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "status" : "passed",
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710352682002,
-        "stop" : 1710352686743,
-        "duration" : 4741
+        "start" : 1710353901741,
+        "stop" : 1710353905032,
+        "duration" : 3291
       },
       "status" : "passed",
       "steps" : [ ],
@@ -84,9 +80,9 @@
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710352686743,
-        "stop" : 1710352686764,
-        "duration" : 21
+        "start" : 1710353905032,
+        "stop" : 1710353905072,
+        "duration" : 40
       },
       "status" : "passed",
       "steps" : [ ],
@@ -99,9 +95,9 @@
     }, {
       "name" : "Click on 'Контакты' link",
       "time" : {
-        "start" : 1710352686764,
-        "stop" : 1710352689830,
-        "duration" : 3066
+        "start" : 1710353905072,
+        "stop" : 1710353906659,
+        "duration" : 1587
       },
       "status" : "passed",
       "steps" : [ ],
@@ -114,9 +110,9 @@
     }, {
       "name" : "Page https://sbis.ru/contacts is opened",
       "time" : {
-        "start" : 1710352689830,
-        "stop" : 1710352690981,
-        "duration" : 1151
+        "start" : 1710353906659,
+        "stop" : 1710353907774,
+        "duration" : 1115
       },
       "status" : "passed",
       "steps" : [ ],
@@ -127,42 +123,139 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Region 'Оренбургская обл.' is checked",
+      "name" : "Region 'г. Москва' is checked",
       "time" : {
-        "start" : 1710352690981,
-        "stop" : 1710352701232,
-        "duration" : 10251
+        "start" : 1710353907774,
+        "stop" : 1710353907811,
+        "duration" : 37
       },
-      "status" : "broken",
-      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
-      "statusTrace" : "  File \"/usr/workspace/core/POM/pages/sbis_contacts_page.py\", line 45, in this_region_is_checked\n    self.wait.until(\n  File \"/usr/local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py\", line 105, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : true,
+      "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : true
+      "hasContent" : false
+    }, {
+      "name" : "Open regions list",
+      "time" : {
+        "start" : 1710353907812,
+        "stop" : 1710353907898,
+        "duration" : 86
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Regions list is loaded",
+      "time" : {
+        "start" : 1710353907898,
+        "stop" : 1710353908836,
+        "duration" : 938
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Activate region 'Камчатский край'",
+      "time" : {
+        "start" : 1710353908836,
+        "stop" : 1710353908935,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Region 'Камчатский край' is checked",
+      "time" : {
+        "start" : 1710353908935,
+        "stop" : 1710353909989,
+        "duration" : 1054
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check change city of partner to 'Петропавловск-Камчатский'",
+      "time" : {
+        "start" : 1710353909989,
+        "stop" : 1710353910013,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check title is contains 'Камчатский край'",
+      "time" : {
+        "start" : 1710353910014,
+        "stop" : 1710353910022,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check URL is contains '41-kamchatskij-kraj'",
+      "time" : {
+        "start" : 1710353910022,
+        "stop" : 1710353910030,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
-    "attachments" : [ {
-      "uid" : "71069d8b576211d5",
-      "name" : "chrome-headless-shell-screenshot 2024-03-13 17:58:22.421597",
-      "source" : "71069d8b576211d5.png",
-      "type" : "image/png",
-      "size" : 202889
-    } ],
+    "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : true,
-    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 12,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710352702423,
-      "stop" : 1710352702513,
-      "duration" : 90
+      "start" : 1710353910031,
+      "stop" : 1710353910122,
+      "duration" : 91
     },
     "status" : "passed",
     "steps" : [ ],
@@ -184,7 +277,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "7ade8dc59a52"
+    "value" : "13dd123d73de"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -208,21 +301,26 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
-    "categories" : [ {
-      "name" : "Test defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
+    "categories" : [ ],
     "history" : {
       "statistic" : {
         "failed" : 0,
         "broken" : 11,
         "skipped" : 0,
-        "passed" : 24,
+        "passed" : 25,
         "unknown" : 0,
-        "total" : 35
+        "total" : 36
       },
       "items" : [ {
+        "uid" : "d4ccd7028d7fbbff",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1710352682001,
+          "stop" : 1710352701233,
+          "duration" : 19232
+        }
+      }, {
         "uid" : "fffe66cbe0bdbff1",
         "status" : "broken",
         "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -381,18 +479,10 @@
           "stop" : 1710245932418,
           "duration" : 3759
         }
-      }, {
-        "uid" : "a8be2a41e57639e2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1710245905298,
-          "stop" : 1710245909638,
-          "duration" : 4340
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "d4ccd7028d7fbbff.json",
+  "source" : "2af6f7654f1d4193.json",
   "parameterValues" : [ ]
 }
