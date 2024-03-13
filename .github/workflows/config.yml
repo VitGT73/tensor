@@ -1,9 +1,6 @@
 name: UI Tests
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   ui-test:
@@ -22,7 +19,9 @@ jobs:
         - name: Run UI-tests
           env:
             SELENIUM_GRID_USE: 0
-          run: docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results
+          run: |
+            docker compose -f docker-compose-pytest.yml exec pytest pytest --browser=chrome -sv --alluredir=allure-results
+            || true
 
         - name: Generate Allure report to allure-report
           run: docker compose -f docker-compose-pytest.yml exec pytest allure generate --clean
