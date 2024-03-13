@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Mar 13 17:31:39 GMT 2024","Wed Mar 13 17:33:34 GMT 2024","115165","tests.UI_tests","tensor_test","TestTensorSuite","","","test_third_scenario","Загрузка Sbis-plugin для Windows"
-"broken","Wed Mar 13 17:31:03 GMT 2024","Wed Mar 13 17:31:18 GMT 2024","14952","tests.UI_tests","tensor_test","TestTensorSuite","","","test_first_scenario","Сравнение размеров картинок в блоке 'Работаем'"
-"broken","Wed Mar 13 17:31:20 GMT 2024","Wed Mar 13 17:31:38 GMT 2024","18020","tests.UI_tests","tensor_test","TestTensorSuite","","","test_second_scenario","Изменение региона на 'Камчатский край'"
+"broken","Wed Mar 13 17:58:02 GMT 2024","Wed Mar 13 17:58:21 GMT 2024","19232","tests.UI_tests","tensor_test","TestTensorSuite","","","test_second_scenario","Изменение региона на 'Камчатский край'"
+"passed","Wed Mar 13 17:58:22 GMT 2024","Wed Mar 13 17:58:37 GMT 2024","15277","tests.UI_tests","tensor_test","TestTensorSuite","","","test_third_scenario","Загрузка Sbis-plugin для Windows"
+"passed","Wed Mar 13 17:57:46 GMT 2024","Wed Mar 13 17:58:01 GMT 2024","14999","tests.UI_tests","tensor_test","TestTensorSuite","","","test_first_scenario","Сравнение размеров картинок в блоке 'Работаем'"

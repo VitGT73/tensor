@@ -3,33 +3,16 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome-headless-shell=122.0.6261.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x55b76103e793 <unknown>\n#1 0x55b760d321c6 <unknown>\n#2 0x55b760d3759c <unknown>\n#3 0x55b760d3932b <unknown>\n#4 0x55b760d393cc <unknown>\n#5 0x55b760d83eac <unknown>\n#6 0x55b760d81ea5 <unknown>\n#7 0x55b760d7f877 <unknown>\n#8 0x55b760d7e6e8 <unknown>\n#9 0x55b760d72247 <unknown>\n#10 0x55b760d9f3d2 <unknown>\n#11 0x55b760d71bd8 <unknown>\n#12 0x55b760d9f59e <unknown>\n#13 0x55b760dbddd9 <unknown>\n#14 0x55b760d9f173 <unknown>\n#15 0x55b760d702d3 <unknown>\n#16 0x55b760d70c9e <unknown>\n#17 0x55b7610028cb <unknown>\n#18 0x55b761006745 <unknown>\n#19 0x55b760fef2e1 <unknown>\n#20 0x55b7610072d2 <unknown>\n#21 0x55b760fd317f <unknown>\n#22 0x55b76102cdc8 <unknown>\n#23 0x55b76102cfc3 <unknown>\n#24 0x55b76103d944 <unknown>\n#25 0x7fe089887ac3 <unknown>",
-      "children" : [ {
-        "name" : "test_first_scenario",
-        "uid" : "8379d6e06ed05408",
-        "parentUid" : "9053293db00d2645eb61934a34895f23",
-        "status" : "broken",
-        "time" : {
-          "start" : 1710351063539,
-          "stop" : 1710351078491,
-          "duration" : 14952
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "9053293db00d2645eb61934a34895f23"
-    }, {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "test_second_scenario",
-        "uid" : "fffe66cbe0bdbff1",
+        "uid" : "d4ccd7028d7fbbff",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1710351080318,
-          "stop" : 1710351098338,
-          "duration" : 18020
+          "start" : 1710352682001,
+          "stop" : 1710352701233,
+          "duration" : 19232
         },
         "flaky" : false,
         "newFailed" : false,

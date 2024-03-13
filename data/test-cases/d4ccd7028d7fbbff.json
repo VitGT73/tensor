@@ -1,41 +1,26 @@
 {
-  "uid" : "fffe66cbe0bdbff1",
+  "uid" : "d4ccd7028d7fbbff",
   "name" : "test_second_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_second_scenario",
   "historyId" : "88684a98bb28e589fd77f4810ecf80ed",
   "time" : {
-    "start" : 1710351080318,
-    "stop" : 1710351098338,
-    "duration" : 18020
+    "start" : 1710352682001,
+    "stop" : 1710352701233,
+    "duration" : 19232
   },
   "description" : "Изменение региона на 'Камчатский край'",
   "descriptionHtml" : "<p>Изменение региона на 'Камчатский край'</p>\n",
   "status" : "broken",
   "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-  "statusTrace" : "self = <tensor_test.TestTensorSuite object at 0x7fd2f232eb90>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"8921fb4007fcc08302d033a770f654fb\")>\n\n    @allure.description(\"Изменение региона на 'Камчатский край'\")\n    def test_second_scenario(self, driver):\n        self.sbis_home_page.open()\n        self.sbis_home_page.is_opened()\n        self.sbis_home_page.click_to_contacts_link()\n        self.sbis_contacts_page.is_opened()\n        print(\"CI = \", settings.CI)\n>       self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)\n\ntests/UI_tests/tensor_test.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ncore/POM/pages/sbis_contacts_page.py:45: in this_region_is_checked\n    self.wait.until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"8921fb4007fcc08302d033a770f654fb\")>\nmethod = <function text_to_be_present_in_element.<locals>._predicate at 0x7fd2f2389cf0>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "statusTrace" : "self = <tensor_test.TestTensorSuite object at 0x761d5257b820>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"3fdb09ca0d45c105496781e2c241473a\")>\n\n    @allure.description(\"Изменение региона на 'Камчатский край'\")\n    def test_second_scenario(self, driver):\n        self.sbis_home_page.open()\n        self.sbis_home_page.is_opened()\n        self.sbis_home_page.click_to_contacts_link()\n        self.sbis_contacts_page.is_opened()\n>       self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)\n\ntests/UI_tests/tensor_test.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ncore/POM/pages/sbis_contacts_page.py:45: in this_region_is_checked\n    self.wait.until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"3fdb09ca0d45c105496781e2c241473a\")>\nmethod = <function text_to_be_present_in_element.<locals>._predicate at 0x761d52565b40>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1710351080144,
-      "stop" : 1710351080317,
-      "duration" : 173
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "remove_download_directory",
-    "time" : {
-      "start" : 1710351063003,
-      "stop" : 1710351063003,
-      "duration" : 0
+      "start" : 1710352681813,
+      "stop" : 1710352682001,
+      "duration" : 188
     },
     "status" : "passed",
     "steps" : [ ],
@@ -48,9 +33,24 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1710351080317,
-      "stop" : 1710351080318,
-      "duration" : 1
+      "start" : 1710352682001,
+      "stop" : 1710352682001,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "remove_download_directory",
+    "time" : {
+      "start" : 1710352666187,
+      "stop" : 1710352666187,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -65,13 +65,13 @@
     "description" : "Изменение региона на 'Камчатский край'",
     "status" : "broken",
     "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
-    "statusTrace" : "self = <tensor_test.TestTensorSuite object at 0x7fd2f232eb90>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"8921fb4007fcc08302d033a770f654fb\")>\n\n    @allure.description(\"Изменение региона на 'Камчатский край'\")\n    def test_second_scenario(self, driver):\n        self.sbis_home_page.open()\n        self.sbis_home_page.is_opened()\n        self.sbis_home_page.click_to_contacts_link()\n        self.sbis_contacts_page.is_opened()\n        print(\"CI = \", settings.CI)\n>       self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)\n\ntests/UI_tests/tensor_test.py:42: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ncore/POM/pages/sbis_contacts_page.py:45: in this_region_is_checked\n    self.wait.until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"8921fb4007fcc08302d033a770f654fb\")>\nmethod = <function text_to_be_present_in_element.<locals>._predicate at 0x7fd2f2389cf0>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "statusTrace" : "self = <tensor_test.TestTensorSuite object at 0x761d5257b820>\ndriver = <selenium.webdriver.remote.webdriver.WebDriver (session=\"3fdb09ca0d45c105496781e2c241473a\")>\n\n    @allure.description(\"Изменение региона на 'Камчатский край'\")\n    def test_second_scenario(self, driver):\n        self.sbis_home_page.open()\n        self.sbis_home_page.is_opened()\n        self.sbis_home_page.click_to_contacts_link()\n        self.sbis_contacts_page.is_opened()\n>       self.sbis_contacts_page.this_region_is_checked(settings.HOME_REGION)\n\ntests/UI_tests/tensor_test.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ncore/POM/pages/sbis_contacts_page.py:45: in this_region_is_checked\n    self.wait.until(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"3fdb09ca0d45c105496781e2c241473a\")>\nmethod = <function text_to_be_present_in_element.<locals>._predicate at 0x761d52565b40>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.10/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710351080318,
-        "stop" : 1710351084330,
-        "duration" : 4012
+        "start" : 1710352682002,
+        "stop" : 1710352686743,
+        "duration" : 4741
       },
       "status" : "passed",
       "steps" : [ ],
@@ -84,9 +84,9 @@
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710351084330,
-        "stop" : 1710351084358,
-        "duration" : 28
+        "start" : 1710352686743,
+        "stop" : 1710352686764,
+        "duration" : 21
       },
       "status" : "passed",
       "steps" : [ ],
@@ -99,9 +99,9 @@
     }, {
       "name" : "Click on 'Контакты' link",
       "time" : {
-        "start" : 1710351084358,
-        "stop" : 1710351086927,
-        "duration" : 2569
+        "start" : 1710352686764,
+        "stop" : 1710352689830,
+        "duration" : 3066
       },
       "status" : "passed",
       "steps" : [ ],
@@ -114,9 +114,9 @@
     }, {
       "name" : "Page https://sbis.ru/contacts is opened",
       "time" : {
-        "start" : 1710351086927,
-        "stop" : 1710351088050,
-        "duration" : 1123
+        "start" : 1710352689830,
+        "stop" : 1710352690981,
+        "duration" : 1151
       },
       "status" : "passed",
       "steps" : [ ],
@@ -129,9 +129,9 @@
     }, {
       "name" : "Region 'Оренбургская обл.' is checked",
       "time" : {
-        "start" : 1710351088050,
-        "stop" : 1710351098337,
-        "duration" : 10287
+        "start" : 1710352690981,
+        "stop" : 1710352701232,
+        "duration" : 10251
       },
       "status" : "broken",
       "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
@@ -145,9 +145,9 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "8b841d940222dc7e",
-      "name" : "chrome-headless-shell-screenshot 2024-03-13 17:31:39.493822",
-      "source" : "8b841d940222dc7e.png",
+      "uid" : "71069d8b576211d5",
+      "name" : "chrome-headless-shell-screenshot 2024-03-13 17:58:22.421597",
+      "source" : "71069d8b576211d5.png",
       "type" : "image/png",
       "size" : 202889
     } ],
@@ -160,9 +160,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710351099495,
-      "stop" : 1710351099586,
-      "duration" : 91
+      "start" : 1710352702423,
+      "stop" : 1710352702513,
+      "duration" : 90
     },
     "status" : "passed",
     "steps" : [ ],
@@ -184,7 +184,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "31370d8c5507"
+    "value" : "7ade8dc59a52"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -216,13 +216,22 @@
     "history" : {
       "statistic" : {
         "failed" : 0,
-        "broken" : 10,
+        "broken" : 11,
         "skipped" : 0,
         "passed" : 24,
         "unknown" : 0,
-        "total" : 34
+        "total" : 35
       },
       "items" : [ {
+        "uid" : "fffe66cbe0bdbff1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1710351080318,
+          "stop" : 1710351098338,
+          "duration" : 18020
+        }
+      }, {
         "uid" : "3329343b86a55da1",
         "status" : "broken",
         "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -380,18 +389,10 @@
           "stop" : 1710245909638,
           "duration" : 4340
         }
-      }, {
-        "uid" : "4ed3ffdbb2146cf1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1710245425727,
-          "stop" : 1710245430518,
-          "duration" : 4791
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "fffe66cbe0bdbff1.json",
+  "source" : "d4ccd7028d7fbbff.json",
   "parameterValues" : [ ]
 }
