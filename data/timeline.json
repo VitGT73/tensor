@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "6b3f2368c27e",
+    "name" : "c7346a3560b1",
     "children" : [ {
       "name" : "7-MainThread",
       "children" : [ {
         "name" : "test_first_scenario",
-        "uid" : "37688d5d8ed01bed",
-        "parentUid" : "3b1a39049a44ac9a6aec23ab633ff04a",
+        "uid" : "caef73d5a16621f6",
+        "parentUid" : "8da3d77f354b76814544497d5d7e1f56",
         "status" : "passed",
         "time" : {
-          "start" : 1710323727684,
-          "stop" : 1710323741539,
-          "duration" : 13855
+          "start" : 1710324062311,
+          "stop" : 1710324076376,
+          "duration" : 14065
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_second_scenario",
-        "uid" : "8c9dbf9a9e731812",
-        "parentUid" : "3b1a39049a44ac9a6aec23ab633ff04a",
+        "uid" : "9eea8ac0307122d",
+        "parentUid" : "8da3d77f354b76814544497d5d7e1f56",
         "status" : "broken",
         "time" : {
-          "start" : 1710323741823,
-          "stop" : 1710323758742,
-          "duration" : 16919
+          "start" : 1710324076679,
+          "stop" : 1710324094106,
+          "duration" : 17427
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_third_scenario",
-        "uid" : "38ff755f1d0c41a7",
-        "parentUid" : "3b1a39049a44ac9a6aec23ab633ff04a",
+        "uid" : "bd69895d549d3139",
+        "parentUid" : "8da3d77f354b76814544497d5d7e1f56",
         "status" : "passed",
         "time" : {
-          "start" : 1710323759061,
-          "stop" : 1710323770402,
-          "duration" : 11341
+          "start" : 1710324094420,
+          "stop" : 1710324106312,
+          "duration" : 11892
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3b1a39049a44ac9a6aec23ab633ff04a"
+      "uid" : "8da3d77f354b76814544497d5d7e1f56"
     } ],
-    "uid" : "c2cc15490b8e1644415c532338d321ad"
+    "uid" : "13b171c98d9236765e6c71bccb7188e6"
   } ],
   "name" : "timeline"
 }
