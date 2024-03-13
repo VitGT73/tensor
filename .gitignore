@@ -9,3 +9,4 @@ allure-report
 **/__pycache__
 downloads
 .vscode
+.gitignore

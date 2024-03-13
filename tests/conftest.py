@@ -1,6 +1,10 @@
+from datetime import datetime
+import time
 import shutil
 import os
 import pytest
+import allure
+from allure_commons.types import AttachmentType
 from selenium import webdriver
 from core.config.settings import settings
 
@@ -34,7 +38,6 @@ def pytest_addoption(parser):
         default="chrome",
         help="Send 'chrome' or 'firefox' as parameter for execution",
     )
-
 
 @pytest.fixture()
 def driver(request):
@@ -84,13 +87,25 @@ def driver(request):
                 service=Service(ChromeDriverManager().install()), options=chrome_options
             )
 
-
-
-
-
     # Implicit wait setup for our framework
     driver.implicitly_wait(10)
     yield driver
     # Tear down
     print(f"\nTear down: {browser} driver")
     driver.quit()
+
+# Добавляем хук pytest_exception_interact, который вызывается при возникновении ошибки в тесте
+def pytest_exception_interact(node, call, report):
+    if report.failed:
+        # Получаем доступ к драйверу (предполагая, что используется фикстура 'driver')
+        driver = node.funcargs['driver']
+        browser = driver.capabilities['browserName']
+        print(browser)
+        time.sleep(1)
+        # Создаем скриншот и прикрепляем его к отчету Allure
+        allure.attach(
+            driver.get_screenshot_as_png(),
+            # name="screenshot",
+            name=f"{browser}-screenshot {datetime.today()}",
+            attachment_type=AttachmentType.PNG
+        )

@@ -42,7 +42,6 @@ class SbisContactsPage(BasePage):
 
     def this_region_is_checked(self, region: str):
         with allure.step(f"Region '{region}' is checked"):
-
             self.wait.until(
                 EC.text_to_be_present_in_element(self.CHECKED_REGION, region)
             )
