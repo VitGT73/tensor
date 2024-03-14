@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome-headless-shell=122.0.6261.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x5d020eec9793 <unknown>\n#1 0x5d020ebbd1c6 <unknown>\n#2 0x5d020ebc259c <unknown>\n#3 0x5d020ebc432b <unknown>\n#4 0x5d020ebc43cc <unknown>\n#5 0x5d020ec0eeac <unknown>\n#6 0x5d020ec0cea5 <unknown>\n#7 0x5d020ec0a877 <unknown>\n#8 0x5d020ec096e8 <unknown>\n#9 0x5d020ebfd247 <unknown>\n#10 0x5d020ec2a3d2 <unknown>\n#11 0x5d020ebfcbd8 <unknown>\n#12 0x5d020ec2a59e <unknown>\n#13 0x5d020ec48dd9 <unknown>\n#14 0x5d020ec2a173 <unknown>\n#15 0x5d020ebfb2d3 <unknown>\n#16 0x5d020ebfbc9e <unknown>\n#17 0x5d020ee8d8cb <unknown>\n#18 0x5d020ee91745 <unknown>\n#19 0x5d020ee7a2e1 <unknown>\n#20 0x5d020ee922d2 <unknown>\n#21 0x5d020ee5e17f <unknown>\n#22 0x5d020eeb7dc8 <unknown>\n#23 0x5d020eeb7fc3 <unknown>\n#24 0x5d020eec8944 <unknown>\n#25 0x78690b968ac3 <unknown>",
-      "children" : [ {
-        "name" : "test_first_scenario",
-        "uid" : "f8fd8c14738b6a00",
-        "parentUid" : "55a1c2ded2ed0abf70c099ebcaba9b36",
-        "status" : "broken",
-        "time" : {
-          "start" : 1710415781741,
-          "stop" : 1710415795426,
-          "duration" : 13685
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "55a1c2ded2ed0abf70c099ebcaba9b36"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
+  "children" : [ ],
   "name" : "categories"
 }
