@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "44c9c2f6db2a",
+    "name" : "fb49449cc8a5",
     "children" : [ {
       "name" : "7-MainThread",
       "children" : [ {
         "name" : "test_third_scenario",
-        "uid" : "c50c14a9f2128bfe",
-        "parentUid" : "041cf1adb20ccbfbd60510f19dfacb74",
+        "uid" : "d9b0d87cc267cd69",
+        "parentUid" : "a83583f83fb64b9905b963224e651a7f",
         "status" : "passed",
         "time" : {
-          "start" : 1710415820163,
-          "stop" : 1710415831056,
-          "duration" : 10893
+          "start" : 1710419370951,
+          "stop" : 1710419387444,
+          "duration" : 16493
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_first_scenario",
-        "uid" : "6678b3de1aa63a07",
-        "parentUid" : "041cf1adb20ccbfbd60510f19dfacb74",
+        "uid" : "6aa034509f897d5e",
+        "parentUid" : "a83583f83fb64b9905b963224e651a7f",
         "status" : "passed",
         "time" : {
-          "start" : 1710415793261,
-          "stop" : 1710415811202,
-          "duration" : 17941
+          "start" : 1710419345705,
+          "stop" : 1710419360372,
+          "duration" : 14667
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_second_scenario",
-        "uid" : "f6fce019129bdd1c",
-        "parentUid" : "041cf1adb20ccbfbd60510f19dfacb74",
+        "uid" : "4026f5128084f47b",
+        "parentUid" : "a83583f83fb64b9905b963224e651a7f",
         "status" : "passed",
         "time" : {
-          "start" : 1710415811516,
-          "stop" : 1710415819895,
-          "duration" : 8379
+          "start" : 1710419360671,
+          "stop" : 1710419370678,
+          "duration" : 10007
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "041cf1adb20ccbfbd60510f19dfacb74"
+      "uid" : "a83583f83fb64b9905b963224e651a7f"
     } ],
-    "uid" : "0e2fbf3ccab90536a39bb35393be0d55"
+    "uid" : "10b637c17196580b1a42903b32ee5804"
   } ],
   "name" : "timeline"
 }
