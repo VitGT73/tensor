@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 11,
       "skipped" : 0,
-      "passed" : 28,
+      "passed" : 29,
       "unknown" : 0,
-      "total" : 39
+      "total" : 40
     },
     "items" : [ {
+      "uid" : "8cdcf5873399448c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710415797257,
+        "stop" : 1710415809141,
+        "duration" : 11884
+      }
+    }, {
       "uid" : "e74e1dd353a4da3e",
       "status" : "passed",
       "time" : {
@@ -168,14 +176,6 @@
         "stop" : 1710320808653,
         "duration" : 4102
       }
-    }, {
-      "uid" : "c7acd54741ae3123",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710315687308,
-        "stop" : 1710315692374,
-        "duration" : 5066
-      }
     } ]
   },
   "f0a889dc4acb2eda17a70e7e90de8b77" : {
@@ -183,11 +183,19 @@
       "failed" : 0,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 36,
+      "passed" : 37,
       "unknown" : 0,
-      "total" : 39
+      "total" : 40
     },
     "items" : [ {
+      "uid" : "b8a8a1a8b61e5bc7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1710415809427,
+        "stop" : 1710415822957,
+        "duration" : 13530
+      }
+    }, {
       "uid" : "35bbe8b2915f49a8",
       "status" : "passed",
       "time" : {
@@ -339,26 +347,27 @@
         "stop" : 1710320816839,
         "duration" : 7891
       }
-    }, {
-      "uid" : "7cbf3c257b1227f3",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710315692636,
-        "stop" : 1710315697774,
-        "duration" : 5138
-      }
     } ]
   },
   "0d3472aee69ab5c8a4e8dc2f3bce6cfd" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 9,
+      "broken" : 10,
       "skipped" : 0,
       "passed" : 30,
       "unknown" : 0,
-      "total" : 39
+      "total" : 40
     },
     "items" : [ {
+      "uid" : "f8fd8c14738b6a00",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome-headless-shell=122.0.6261.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x5d020eec9793 <unknown>\n#1 0x5d020ebbd1c6 <unknown>\n#2 0x5d020ebc259c <unknown>\n#3 0x5d020ebc432b <unknown>\n#4 0x5d020ebc43cc <unknown>\n#5 0x5d020ec0eeac <unknown>\n#6 0x5d020ec0cea5 <unknown>\n#7 0x5d020ec0a877 <unknown>\n#8 0x5d020ec096e8 <unknown>\n#9 0x5d020ebfd247 <unknown>\n#10 0x5d020ec2a3d2 <unknown>\n#11 0x5d020ebfcbd8 <unknown>\n#12 0x5d020ec2a59e <unknown>\n#13 0x5d020ec48dd9 <unknown>\n#14 0x5d020ec2a173 <unknown>\n#15 0x5d020ebfb2d3 <unknown>\n#16 0x5d020ebfbc9e <unknown>\n#17 0x5d020ee8d8cb <unknown>\n#18 0x5d020ee91745 <unknown>\n#19 0x5d020ee7a2e1 <unknown>\n#20 0x5d020ee922d2 <unknown>\n#21 0x5d020ee5e17f <unknown>\n#22 0x5d020eeb7dc8 <unknown>\n#23 0x5d020eeb7fc3 <unknown>\n#24 0x5d020eec8944 <unknown>\n#25 0x78690b968ac3 <unknown>",
+      "time" : {
+        "start" : 1710415781741,
+        "stop" : 1710415795426,
+        "duration" : 13685
+      }
+    }, {
       "uid" : "afbdf6e424dea70d",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome-headless-shell=122.0.6261.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n#0 0x63d033544793 <unknown>\n#1 0x63d0332381c6 <unknown>\n#2 0x63d03323d59c <unknown>\n#3 0x63d03323f5f2 <unknown>\n#4 0x63d0332c4de8 <unknown>\n#5 0x63d0332a53d2 <unknown>\n#6 0x63d0332c3dd9 <unknown>\n#7 0x63d0332a5173 <unknown>\n#8 0x63d0332762d3 <unknown>\n#9 0x63d033276c9e <unknown>\n#10 0x63d0335088cb <unknown>\n#11 0x63d03350c745 <unknown>\n#12 0x63d0334f52e1 <unknown>\n#13 0x63d03350d2d2 <unknown>\n#14 0x63d0334d917f <unknown>\n#15 0x63d033532dc8 <unknown>\n#16 0x63d033532fc3 <unknown>\n#17 0x63d033543944 <unknown>\n#18 0x79751b204ac3 <unknown>",
@@ -514,14 +523,6 @@
         "start" : 1710320799720,
         "stop" : 1710320804167,
         "duration" : 4447
-      }
-    }, {
-      "uid" : "734feb80743b1a21",
-      "status" : "passed",
-      "time" : {
-        "start" : 1710315680824,
-        "stop" : 1710315687031,
-        "duration" : 6207
       }
     } ]
   }

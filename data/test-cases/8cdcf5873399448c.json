@@ -1,12 +1,12 @@
 {
-  "uid" : "e74e1dd353a4da3e",
+  "uid" : "8cdcf5873399448c",
   "name" : "test_second_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_second_scenario",
   "historyId" : "88684a98bb28e589fd77f4810ecf80ed",
   "time" : {
-    "start" : 1710396524460,
-    "stop" : 1710396536038,
-    "duration" : 11578
+    "start" : 1710415797257,
+    "stop" : 1710415809141,
+    "duration" : 11884
   },
   "description" : "Изменение региона на 'Камчатский край'",
   "descriptionHtml" : "<p>Изменение региона на 'Камчатский край'</p>\n",
@@ -14,11 +14,26 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1710415797080,
+      "stop" : 1710415797256,
+      "duration" : 176
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
     "name" : "setup",
     "time" : {
-      "start" : 1710396524459,
-      "stop" : 1710396524460,
-      "duration" : 1
+      "start" : 1710415797256,
+      "stop" : 1710415797256,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,24 +46,9 @@
   }, {
     "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710396512273,
-      "stop" : 1710396512274,
-      "duration" : 1
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
-    "name" : "driver",
-    "time" : {
-      "start" : 1710396524258,
-      "stop" : 1710396524459,
-      "duration" : 201
+      "start" : 1710415781184,
+      "stop" : 1710415781184,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -65,9 +65,9 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710396524460,
-        "stop" : 1710396530337,
-        "duration" : 5877
+        "start" : 1710415797257,
+        "stop" : 1710415802034,
+        "duration" : 4777
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710396530337,
-        "stop" : 1710396530359,
-        "duration" : 22
+        "start" : 1710415802034,
+        "stop" : 1710415802064,
+        "duration" : 30
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,9 +95,9 @@
     }, {
       "name" : "Click on 'Контакты' link",
       "time" : {
-        "start" : 1710396530359,
-        "stop" : 1710396532568,
-        "duration" : 2209
+        "start" : 1710415802064,
+        "stop" : 1710415805124,
+        "duration" : 3060
       },
       "status" : "passed",
       "steps" : [ ],
@@ -110,9 +110,9 @@
     }, {
       "name" : "Page https://sbis.ru/contacts is opened",
       "time" : {
-        "start" : 1710396532568,
-        "stop" : 1710396533700,
-        "duration" : 1132
+        "start" : 1710415805124,
+        "stop" : 1710415806239,
+        "duration" : 1115
       },
       "status" : "passed",
       "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "Region 'г. Москва' is checked",
       "time" : {
-        "start" : 1710396533700,
-        "stop" : 1710396533738,
-        "duration" : 38
+        "start" : 1710415806239,
+        "stop" : 1710415806272,
+        "duration" : 33
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,9 +140,9 @@
     }, {
       "name" : "Open regions list",
       "time" : {
-        "start" : 1710396533738,
-        "stop" : 1710396533845,
-        "duration" : 107
+        "start" : 1710415806272,
+        "stop" : 1710415806355,
+        "duration" : 83
       },
       "status" : "passed",
       "steps" : [ ],
@@ -155,9 +155,9 @@
     }, {
       "name" : "Regions list is loaded",
       "time" : {
-        "start" : 1710396533845,
-        "stop" : 1710396534797,
-        "duration" : 952
+        "start" : 1710415806356,
+        "stop" : 1710415807959,
+        "duration" : 1603
       },
       "status" : "passed",
       "steps" : [ ],
@@ -170,9 +170,9 @@
     }, {
       "name" : "Activate region 'Камчатский край'",
       "time" : {
-        "start" : 1710396534797,
-        "stop" : 1710396534921,
-        "duration" : 124
+        "start" : 1710415807959,
+        "stop" : 1710415808048,
+        "duration" : 89
       },
       "status" : "passed",
       "steps" : [ ],
@@ -185,9 +185,9 @@
     }, {
       "name" : "Region 'Камчатский край' is checked",
       "time" : {
-        "start" : 1710396534921,
-        "stop" : 1710396535985,
-        "duration" : 1064
+        "start" : 1710415808049,
+        "stop" : 1710415809102,
+        "duration" : 1053
       },
       "status" : "passed",
       "steps" : [ ],
@@ -200,9 +200,9 @@
     }, {
       "name" : "Check change city of partner to 'Петропавловск-Камчатский'",
       "time" : {
-        "start" : 1710396535985,
-        "stop" : 1710396536018,
-        "duration" : 33
+        "start" : 1710415809102,
+        "stop" : 1710415809125,
+        "duration" : 23
       },
       "status" : "passed",
       "steps" : [ ],
@@ -215,9 +215,9 @@
     }, {
       "name" : "Check title is contains 'Камчатский край'",
       "time" : {
-        "start" : 1710396536018,
-        "stop" : 1710396536028,
-        "duration" : 10
+        "start" : 1710415809125,
+        "stop" : 1710415809134,
+        "duration" : 9
       },
       "status" : "passed",
       "steps" : [ ],
@@ -230,9 +230,9 @@
     }, {
       "name" : "Check URL is contains '41-kamchatskij-kraj'",
       "time" : {
-        "start" : 1710396536028,
-        "stop" : 1710396536037,
-        "duration" : 9
+        "start" : 1710415809134,
+        "stop" : 1710415809141,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ ],
@@ -253,9 +253,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710396536039,
-      "stop" : 1710396536135,
-      "duration" : 96
+      "start" : 1710415809142,
+      "stop" : 1710415809234,
+      "duration" : 92
     },
     "status" : "passed",
     "steps" : [ ],
@@ -277,7 +277,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "96f2018d74fd"
+    "value" : "0f8677b3741d"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -307,11 +307,19 @@
         "failed" : 0,
         "broken" : 11,
         "skipped" : 0,
-        "passed" : 28,
+        "passed" : 29,
         "unknown" : 0,
-        "total" : 39
+        "total" : 40
       },
       "items" : [ {
+        "uid" : "e74e1dd353a4da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710396524460,
+          "stop" : 1710396536038,
+          "duration" : 11578
+        }
+      }, {
         "uid" : "4b985f24a79303f4",
         "status" : "passed",
         "time" : {
@@ -471,18 +479,10 @@
           "stop" : 1710315692374,
           "duration" : 5066
         }
-      }, {
-        "uid" : "5f6e1fffe6ca3d85",
-        "status" : "passed",
-        "time" : {
-          "start" : 1710306723449,
-          "stop" : 1710306727033,
-          "duration" : 3584
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "e74e1dd353a4da3e.json",
+  "source" : "8cdcf5873399448c.json",
   "parameterValues" : [ ]
 }
