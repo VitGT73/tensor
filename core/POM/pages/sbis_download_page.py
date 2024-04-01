@@ -23,6 +23,7 @@ class SbisDownloadPage(BasePage):
             By.XPATH,
             "//a[contains(text(),'Скачать (Exe 8.30 МБ)')]",
         )
+        self.REPORT_URL_PART = "tab=ereport"
         self.PLUGIN_URL_PART = "tab=plugin"
 
     def click_to_contacts_link(self):
@@ -33,11 +34,7 @@ class SbisDownloadPage(BasePage):
 
     def click_to_plugin_link(self):
         with allure.step("Click on 'СБИС Плагин' link"):
-            self.wait.until(
-                EC.presence_of_element_located(
-                    (By.CSS_SELECTOR, "body > div.ws-has-focus")
-                )
-            )
+            self.wait.until(EC.url_contains(self.REPORT_URL_PART))
             self.wait.until(EC.element_to_be_clickable(self.PLUGIN_LINK)).click()
 
     def is_plugin_section_open(self):
