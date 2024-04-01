@@ -1,12 +1,12 @@
 {
-  "uid" : "20826827b9e75d6f",
+  "uid" : "2d1ffe9c17c352e9",
   "name" : "test_second_scenario",
   "fullName" : "tests.UI_tests.tensor_test.TestTensorSuite#test_second_scenario",
   "historyId" : "88684a98bb28e589fd77f4810ecf80ed",
   "time" : {
-    "start" : 1710423247251,
-    "stop" : 1710423256694,
-    "duration" : 9443
+    "start" : 1711973383372,
+    "stop" : 1711973392437,
+    "duration" : 9065
   },
   "description" : "Изменение региона на 'Камчатский край'",
   "descriptionHtml" : "<p>Изменение региона на 'Камчатский край'</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1710423247066,
-      "stop" : 1710423247250,
-      "duration" : 184
+      "start" : 1711973383186,
+      "stop" : 1711973383371,
+      "duration" : 185
     },
     "status" : "passed",
     "steps" : [ ],
@@ -31,8 +31,8 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1710423247250,
-      "stop" : 1710423247250,
+      "start" : 1711973383372,
+      "stop" : 1711973383372,
       "duration" : 0
     },
     "status" : "passed",
@@ -46,8 +46,8 @@
   }, {
     "name" : "remove_download_directory",
     "time" : {
-      "start" : 1710423230351,
-      "stop" : 1710423230351,
+      "start" : 1711973371069,
+      "stop" : 1711973371069,
       "duration" : 0
     },
     "status" : "passed",
@@ -65,9 +65,9 @@
     "steps" : [ {
       "name" : "Open https://sbis.ru page",
       "time" : {
-        "start" : 1710423247251,
-        "stop" : 1710423250855,
-        "duration" : 3604
+        "start" : 1711973383372,
+        "stop" : 1711973386609,
+        "duration" : 3237
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,8 +80,8 @@
     }, {
       "name" : "Page https://sbis.ru is opened",
       "time" : {
-        "start" : 1710423250855,
-        "stop" : 1710423250878,
+        "start" : 1711973386609,
+        "stop" : 1711973386632,
         "duration" : 23
       },
       "status" : "passed",
@@ -95,9 +95,9 @@
     }, {
       "name" : "Click on 'Контакты' link",
       "time" : {
-        "start" : 1710423250878,
-        "stop" : 1710423253227,
-        "duration" : 2349
+        "start" : 1711973386632,
+        "stop" : 1711973388512,
+        "duration" : 1880
       },
       "status" : "passed",
       "steps" : [ ],
@@ -110,9 +110,9 @@
     }, {
       "name" : "Page https://sbis.ru/contacts is opened",
       "time" : {
-        "start" : 1710423253227,
-        "stop" : 1710423254322,
-        "duration" : 1095
+        "start" : 1711973388512,
+        "stop" : 1711973389666,
+        "duration" : 1154
       },
       "status" : "passed",
       "steps" : [ ],
@@ -125,9 +125,9 @@
     }, {
       "name" : "Region 'г. Москва' is checked",
       "time" : {
-        "start" : 1710423254322,
-        "stop" : 1710423254352,
-        "duration" : 30
+        "start" : 1711973389666,
+        "stop" : 1711973389699,
+        "duration" : 33
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,9 +140,9 @@
     }, {
       "name" : "Open regions list",
       "time" : {
-        "start" : 1710423254352,
-        "stop" : 1710423254431,
-        "duration" : 79
+        "start" : 1711973389699,
+        "stop" : 1711973389793,
+        "duration" : 94
       },
       "status" : "passed",
       "steps" : [ ],
@@ -155,9 +155,9 @@
     }, {
       "name" : "Regions list is loaded",
       "time" : {
-        "start" : 1710423254431,
-        "stop" : 1710423255515,
-        "duration" : 1084
+        "start" : 1711973389793,
+        "stop" : 1711973391247,
+        "duration" : 1454
       },
       "status" : "passed",
       "steps" : [ ],
@@ -170,9 +170,9 @@
     }, {
       "name" : "Activate region 'Камчатский край'",
       "time" : {
-        "start" : 1710423255515,
-        "stop" : 1710423255607,
-        "duration" : 92
+        "start" : 1711973391247,
+        "stop" : 1711973391342,
+        "duration" : 95
       },
       "status" : "passed",
       "steps" : [ ],
@@ -185,9 +185,9 @@
     }, {
       "name" : "Region 'Камчатский край' is checked",
       "time" : {
-        "start" : 1710423255607,
-        "stop" : 1710423256659,
-        "duration" : 1052
+        "start" : 1711973391342,
+        "stop" : 1711973392398,
+        "duration" : 1056
       },
       "status" : "passed",
       "steps" : [ ],
@@ -200,9 +200,9 @@
     }, {
       "name" : "Check change city of partner to 'Петропавловск-Камчатский'",
       "time" : {
-        "start" : 1710423256659,
-        "stop" : 1710423256681,
-        "duration" : 22
+        "start" : 1711973392398,
+        "stop" : 1711973392422,
+        "duration" : 24
       },
       "status" : "passed",
       "steps" : [ ],
@@ -215,9 +215,9 @@
     }, {
       "name" : "Check title is contains 'Камчатский край'",
       "time" : {
-        "start" : 1710423256681,
-        "stop" : 1710423256687,
-        "duration" : 6
+        "start" : 1711973392422,
+        "stop" : 1711973392430,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ ],
@@ -230,8 +230,8 @@
     }, {
       "name" : "Check URL is contains '41-kamchatskij-kraj'",
       "time" : {
-        "start" : 1710423256687,
-        "stop" : 1710423256694,
+        "start" : 1711973392430,
+        "stop" : 1711973392437,
         "duration" : 7
       },
       "status" : "passed",
@@ -253,9 +253,9 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1710423256695,
-      "stop" : 1710423256787,
-      "duration" : 92
+      "start" : 1711973392438,
+      "stop" : 1711973392529,
+      "duration" : 91
     },
     "status" : "passed",
     "steps" : [ ],
@@ -277,7 +277,7 @@
     "value" : "TestTensorSuite"
   }, {
     "name" : "host",
-    "value" : "bff833fd71d1"
+    "value" : "8776d7dd27c7"
   }, {
     "name" : "thread",
     "value" : "7-MainThread"
@@ -307,11 +307,19 @@
         "failed" : 0,
         "broken" : 11,
         "skipped" : 0,
-        "passed" : 31,
+        "passed" : 32,
         "unknown" : 0,
-        "total" : 42
+        "total" : 43
       },
       "items" : [ {
+        "uid" : "20826827b9e75d6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1710423247251,
+          "stop" : 1710423256694,
+          "duration" : 9443
+        }
+      }, {
         "uid" : "4026f5128084f47b",
         "status" : "passed",
         "time" : {
@@ -471,18 +479,10 @@
           "stop" : 1710324578150,
           "duration" : 3675
         }
-      }, {
-        "uid" : "b547e4c5da78ec55",
-        "status" : "passed",
-        "time" : {
-          "start" : 1710320956520,
-          "stop" : 1710320961906,
-          "duration" : 5386
-        }
       } ]
     },
     "tags" : [ ]
   },
-  "source" : "20826827b9e75d6f.json",
+  "source" : "2d1ffe9c17c352e9.json",
   "parameterValues" : [ ]
 }
