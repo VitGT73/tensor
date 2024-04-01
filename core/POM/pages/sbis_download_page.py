@@ -21,7 +21,7 @@ class SbisDownloadPage(BasePage):
         self.LINUX_TAB = (By.XPATH, "//div[@data-id='linux'][.//span[text()='Linux']]")
         self.WEB_INSTALLER_LINK = (
             By.XPATH,
-            "//a[contains(text(),'Скачать (Exe 8.17 МБ)')]",
+            "//a[contains(text(),'Скачать (Exe 8.30 МБ)')]",
         )
         self.PLUGIN_URL_PART = "tab=plugin"
 
@@ -73,4 +73,5 @@ class SbisDownloadPage(BasePage):
     def is_web_installer_have_right_size(self, download_path):
         with allure.step("Check size Web-installer file"):
             file_size = get_file_size(download_path)
-            assert file_size == 8567928, "Размер файла не соответствует 8.17 МБ"
+            # print(file_size)
+            assert file_size == 8699000, "Размер файла не соответствует 8.30 МБ"
