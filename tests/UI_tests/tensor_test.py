@@ -6,7 +6,7 @@ import allure
 from core.config.settings import settings
 from core.helpers.base_test import BaseTest
 
-@allure.title("Тестовое задание от компании Тензор")
+@allure.title("Смок тесты")
 class TestTensorSuite(BaseTest):
 
     sbis_window = {}
